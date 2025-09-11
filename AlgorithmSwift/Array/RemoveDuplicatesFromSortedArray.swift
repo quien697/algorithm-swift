@@ -8,20 +8,23 @@
 import Foundation
 
 /**
+ *
  * LeetCode
  *
  * 26. Remove Duplicates from Sorted Array
  * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+ *
  */
-
-enum removeDuplicatesFromSortedArray {
+enum RemoveDuplicatesFromSortedArray {
   
   /**
+   *
    * Approach: Two ointer
    * Time: O(N)
    * Spafce: O(1)
+   *
    */
-  static func solve (_ nums: inout [Int]) -> Int {
+  static func solve(_ nums: inout [Int]) -> Int {
     var slow = 0
     var fast = 1
     
@@ -38,16 +41,18 @@ enum removeDuplicatesFromSortedArray {
   }
   
   static func run () {
-    print("=== RemoveDuplicatesFromSortedArray ===");
+    print("=== Remove Duplicates from Sorted Array ===");
     
     var nums1: [Int] = [1, 1, 2]
     let len1 = solve(&nums1)
     print("\nCase 1:")
+    print("Nums = \(nums1)")
     print("Result = ", len1, ",nums = ", Array(nums1.prefix(len1)))
     
     var nums2: [Int] = [0, 0, 1, 2, 3, 3, 4, 4, 5]
     let len2 = solve(&nums2)
     print("\nCase 2:")
+    print("Nums = \(nums2)")
     print("Result = ", len2, ",nums = ", Array(nums2.prefix(len2)))
   }
 }
