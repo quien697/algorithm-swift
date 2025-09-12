@@ -21,7 +21,7 @@ enum BestTimeToBuyAndSellStockII {
    *
    * Approach: Greedy
    * Time: O(N)
-   * Spafce: O(1)
+   * Space: O(1)
    *
    */
   static func solve(_ prices: [Int]) -> Int {

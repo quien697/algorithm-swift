@@ -21,7 +21,7 @@ enum RemoveDuplicatesFromSortedArray {
    *
    * Approach: Two ointer
    * Time: O(N)
-   * Spafce: O(1)
+   * Space: O(1)
    *
    */
   static func solve(_ nums: inout [Int]) -> Int {
