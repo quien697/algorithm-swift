@@ -21,7 +21,7 @@ enum RotateArray {
     
     /**
      * Approach: Brute Force
-     * Time: O(N * K)
+     * Time: O(N x K)
      * Space: O(1)
      */
     static func solve(_ nums: inout [Int], _ k: Int) -> [Int] {

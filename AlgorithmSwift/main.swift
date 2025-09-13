@@ -18,3 +18,7 @@ import Foundation
 // Leetcode 189
 //RotateArray.BruteForce.run()
 //RotateArray.Reverse.run()
+
+// Leetcode 217
+//ContainsDuplicate.BruteForce.run()
+//ContainsDuplicate.HashTable.run()
