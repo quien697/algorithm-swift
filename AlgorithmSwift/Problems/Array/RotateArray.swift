@@ -1,5 +1,5 @@
 //
-//  Rotate Array.swift
+//  RotateArray.swift
 //  AlgorithmSwift
 //
 //  Created by Quien on 2025-09-12.

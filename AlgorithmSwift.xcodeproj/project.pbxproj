@@ -23,9 +23,27 @@
 		60BACE452E76BEE5008BAD19 /* AlgorithmSwfitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmSwfitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		60BACE532E76C04A008BAD19 /* Exceptions for "AlgorithmSwift" folder in "AlgorithmSwfitTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Model/Approach.swift,
+				Problems/Array/BestTimeToBuyAndSellStockII.swift,
+				Problems/Array/ContainsDuplicate.swift,
+				Problems/Array/RemoveDuplicatesFromSortedArray.swift,
+				Problems/Array/RotateArray.swift,
+				Problems/Array/SingleNumber.swift,
+			);
+			target = 60BACE442E76BEE5008BAD19 /* AlgorithmSwfitTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6041E44A2E71661C009B6C5F /* AlgorithmSwift */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				60BACE532E76C04A008BAD19 /* Exceptions for "AlgorithmSwift" folder in "AlgorithmSwfitTests" target */,
+			);
 			path = AlgorithmSwift;
 			sourceTree = "<group>";
 		};
