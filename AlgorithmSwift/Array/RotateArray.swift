@@ -20,9 +20,11 @@ enum RotateArray {
   enum BruteForce {
     
     /**
+     *
      * Approach: Brute Force
      * Time: O(N x K)
      * Space: O(1)
+     *
      */
     static func solve(_ nums: inout [Int], _ k: Int) -> [Int] {
       guard k > 0 else { return nums }
@@ -52,9 +54,11 @@ enum RotateArray {
   enum Reverse {
     
     /**
+     *
      * Approach: Reverse
      * Time: O(N)
      * Space: O(1)
+     * 
      */
     static func solve(_ nums: inout [Int], _ k: Int) -> [Int] {
       guard k > 0 else { return nums }

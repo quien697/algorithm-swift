@@ -21,9 +21,11 @@ enum ContainsDuplicate {
   enum BruteForce {
     
     /**
+     *
      * Approach: Brute Force
      * Time: O(N x N)
      * Space: O(1)
+     *
      */
     static func solve(_ nums: [Int]) -> Bool {
       guard nums.count > 1 else { return false }
@@ -61,10 +63,13 @@ enum ContainsDuplicate {
   }
   
   enum HashTable {
+    
     /**
+     *
      * Approach: Hash Table
      * Time: O(N)
      * Space: O(N)
+     *
      */
     static func solve(_ nums: [Int]) -> Bool {
       guard nums.count > 1 else { return false }

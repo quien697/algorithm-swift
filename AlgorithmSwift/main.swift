@@ -22,3 +22,7 @@ import Foundation
 // Leetcode 217
 //ContainsDuplicate.BruteForce.run()
 //ContainsDuplicate.HashTable.run()
+
+// Leetcode 136
+//SingleNumber.Bitwise.run()
+//SingleNumber.Bitwise2.run()
