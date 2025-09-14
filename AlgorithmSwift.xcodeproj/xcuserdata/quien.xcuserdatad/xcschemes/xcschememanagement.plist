@@ -4,10 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AlgorithmSwift.xcscheme_^#shared#^_</key>
+		<key>AlgorithmSwfitTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>AlgorithmSwift.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6041E4472E71661C009B6C5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60BACDFB2E767BA6008BAD19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
