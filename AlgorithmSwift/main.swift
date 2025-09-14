@@ -10,10 +10,10 @@ import Foundation
 // MARK: - Array
 
 // Leetcode 26
-//RemoveDuplicatesFromSortedArray.run()
+//RemoveDuplicatesFromSortedArray.TwoPointer.run()
 
 // Leetcode 122
-//BestTimeToBuyAndSellStockII.run()
+//BestTimeToBuyAndSellStockII.Greedy.run()
 
 // Leetcode 189
 //RotateArray.BruteForce.run()
@@ -25,4 +25,3 @@ import Foundation
 
 // Leetcode 136
 //SingleNumber.Bitwise.run()
-//SingleNumber.Bitwise2.run()
