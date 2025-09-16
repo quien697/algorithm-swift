@@ -13,7 +13,7 @@ import Foundation
 //RemoveDuplicatesFromSortedArray.TwoPointer.run()
 
 // Leetcode 122
-//BestTimeToBuyAndSellStockII.Greedy.run()
+//BestTimeToBuyAndSellStockII.GreedyOnePass.run()
 
 // Leetcode 189
 //RotateArray.BruteForce.run()

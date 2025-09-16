@@ -24,8 +24,8 @@ enum ContainsDuplicate: String {
     ([1,1,1,3,3,4,3,2,4,2], true)
   ]
   
-  static func printResult(_  approach: String, _ solve: ([Int]) -> Bool) {
-    print("=== \(RotateArray.name.rawValue) (\(approach)) ===");
+  static func printResult(_ techniques: [String], _ solve: ([Int]) -> Bool) {
+    print("=== \(RotateArray.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
     
     for (index, testCase) in testCases.enumerated() {
       let nums = testCase.0
@@ -44,7 +44,10 @@ enum ContainsDuplicate: String {
    * Space: O(1)
    *
    */
-  enum BruteForce {
+  enum BruteForce: ApproachProtocol {
+    static var techniques = [
+      Technique.BruteForce.rawValue
+    ]
     
     static func solve(_ nums: [Int]) -> Bool {
       guard nums.count > 1 else { return false }
@@ -62,7 +65,7 @@ enum ContainsDuplicate: String {
     }
     
     static func run () {
-      printResult(Approach.BruteForce.rawValue, solve)
+      printResult(techniques, solve)
     }
   }
   
@@ -73,7 +76,10 @@ enum ContainsDuplicate: String {
    * Space: O(N)
    *
    */
-  enum HashTable {
+  enum HashTable: ApproachProtocol {
+    static var techniques = [
+      Technique.HashTable.rawValue
+    ]
     
     static func solve(_ nums: [Int]) -> Bool {
       guard nums.count > 1 else { return false }
@@ -92,7 +98,7 @@ enum ContainsDuplicate: String {
     }
     
     static func run () {
-      printResult(Approach.HashTable.rawValue, solve)
+      printResult(techniques, solve)
     }
   }
 }

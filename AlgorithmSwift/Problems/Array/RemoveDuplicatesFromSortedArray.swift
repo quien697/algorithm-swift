@@ -30,7 +30,10 @@ enum RemoveDuplicatesFromSortedArray: String {
    * Space: O(1)
    *
    */
-  enum TwoPointer {
+  enum TwoPointer: ApproachProtocol {
+    static var techniques = [
+      Technique.TwoPointer.rawValue
+    ]
     
     static func solve(_ nums: inout [Int]) -> Int {
       var slow = 0
@@ -49,7 +52,7 @@ enum RemoveDuplicatesFromSortedArray: String {
     }
     
     static func run () {
-      print("=== \(RemoveDuplicatesFromSortedArray.name.rawValue) (\(Approach.TwoPointer.rawValue)) ===");
+      print("=== \(RemoveDuplicatesFromSortedArray.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
       
       for (index, testCase) in testCases.enumerated() {
         var nums = testCase.0

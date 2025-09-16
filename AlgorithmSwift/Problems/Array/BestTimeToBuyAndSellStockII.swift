@@ -26,12 +26,16 @@ enum BestTimeToBuyAndSellStockII: String {
   
   /**
    *
-   * Approach: Greedy
+   * Approach: Greedy + One-Pass
    * Time: O(N)
    * Space: O(1)
    *
    */
-  enum Greedy {
+  enum GreedyOnePass: ApproachProtocol {
+    static var techniques = [
+      Technique.Greedy.rawValue,
+      Technique.OnePass.rawValue
+    ]
     
     static func solve(_ prices: [Int]) -> Int {
       var profit = 0
@@ -46,7 +50,7 @@ enum BestTimeToBuyAndSellStockII: String {
     }
     
     static func run () {
-      print("=== \(BestTimeToBuyAndSellStockII.name.rawValue) (\(Approach.Greedy.rawValue)) ===");
+      print("=== \(BestTimeToBuyAndSellStockII.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
       
       for (index, testCase) in testCases.enumerated() {
         let price = testCase.0

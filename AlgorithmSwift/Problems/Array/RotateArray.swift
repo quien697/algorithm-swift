@@ -23,8 +23,8 @@ enum RotateArray: String{
     (([-1,-100,3,99], 2), [3,99,-1,-100])
   ]
   
-  static func printResult(_  approach: String, _ solve: (inout [Int], Int) -> [Int]) {
-    print("=== \(RotateArray.name.rawValue) (\(approach)) ===");
+  static func printResult(_  techniques: [String], _ solve: (inout [Int], Int) -> [Int]) {
+    print("=== \(RotateArray.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
     
     for (index, testCase) in testCases.enumerated() {
       var nums = testCase.0.0
@@ -44,7 +44,10 @@ enum RotateArray: String{
    * Space: O(1)
    *
    */
-  enum BruteForce {
+  enum BruteForce: ApproachProtocol {
+    static var techniques = [
+      Technique.BruteForce.rawValue
+    ]
     
     static func solve(_ nums: inout [Int], _ k: Int) -> [Int] {
       guard k > 0 else { return nums }
@@ -57,7 +60,7 @@ enum RotateArray: String{
     }
     
     static func run() {
-      printResult(Approach.BruteForce.rawValue, solve)
+      printResult(techniques, solve)
     }
   }
   
@@ -68,7 +71,10 @@ enum RotateArray: String{
    * Space: O(1)
    *
    */
-  enum Reverse {
+  enum Reverse: ApproachProtocol {
+    static var techniques = [
+      Technique.Reverse.rawValue
+    ]
     
     static func solve(_ nums: inout [Int], _ k: Int) -> [Int] {
       guard k > 0 else { return nums }
@@ -82,7 +88,7 @@ enum RotateArray: String{
     }
     
     static func run () {
-      printResult(Approach.Reverse.rawValue, solve)
+      printResult(techniques, solve)
     }
   }
 }

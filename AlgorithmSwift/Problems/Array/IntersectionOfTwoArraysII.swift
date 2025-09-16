@@ -46,8 +46,8 @@ enum IntersectionOfTwoArraysII: String {
    */
   enum SortingTwoPointer {
     static let techniques = [
-      Approach.Sorting.rawValue,
-      Approach.TwoPointer.rawValue
+      Technique.Sorting.rawValue,
+      Technique.TwoPointer.rawValue
     ]
     
     static func solve(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
@@ -72,20 +72,20 @@ enum IntersectionOfTwoArraysII: String {
     }
     
     static func run () {
-      IntersectionOfTwoArraysII.printResult(techniques, solve)
+      printResult(techniques, solve)
     }
   }
   
   /**
    *
-   * Approach: Dictionary
+   * Approach: Hash Table
    * Time: O(N + M)
    * Space: O(min(N, M))
    *
    */
-  enum Dictionary {
+  enum HashTable {
     static var techniques = [
-      Approach.Dictionary.rawValue
+      Technique.HashTable.rawValue
     ]
     
     static func solve(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
@@ -107,7 +107,7 @@ enum IntersectionOfTwoArraysII: String {
     }
     
     static func run () {
-      IntersectionOfTwoArraysII.printResult(techniques, solve)
+      printResult(techniques, solve)
     }
   }
 }

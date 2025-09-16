@@ -31,7 +31,10 @@ enum SingleNumber: String {
    * Space: O(1)
    *
    */
-  enum Bitwise {
+  enum Bitwise: ApproachProtocol {
+    static var techniques = [
+      Technique.Bitwise.rawValue
+    ]
     
     static func solve(_ nums: [Int]) -> Int {
       // Using XOR (^) operator
@@ -48,7 +51,7 @@ enum SingleNumber: String {
     }
     
     static func run () {
-      print("=== \(SingleNumber.name.rawValue) (\(Approach.Bitwise.rawValue)) ===");
+      print("=== \(SingleNumber.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
       
       for (index, testCase) in testCases.enumerated() {
         let nums = testCase.0

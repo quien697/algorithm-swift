@@ -17,10 +17,10 @@ final class IntersectionOfTwoArraysIITest: XCTestCase {
     }
   }
   
-  func testDictionary() throws {
+  func testHashTable() throws {
     IntersectionOfTwoArraysII.testCases.forEach { input, expected in
       let nums1 = input.0, nums2 = input.1
-      XCTAssertEqual(IntersectionOfTwoArraysII.Dictionary.solve(nums1, nums2).sorted(), expected)
+      XCTAssertEqual(IntersectionOfTwoArraysII.HashTable.solve(nums1, nums2).sorted(), expected)
     }
   }
 }
