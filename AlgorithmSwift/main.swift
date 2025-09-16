@@ -25,3 +25,7 @@ import Foundation
 
 // Leetcode 136
 //SingleNumber.Bitwise.run()
+
+// Leetcode 350
+//IntersectionOfTwoArraysII.SortingTwoPointer.run()
+//IntersectionOfTwoArraysII.Dictionary.run()

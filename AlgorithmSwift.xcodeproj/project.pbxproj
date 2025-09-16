@@ -30,6 +30,7 @@
 				Model/Approach.swift,
 				Problems/Array/BestTimeToBuyAndSellStockII.swift,
 				Problems/Array/ContainsDuplicate.swift,
+				Problems/Array/IntersectionOfTwoArraysII.swift,
 				Problems/Array/RemoveDuplicatesFromSortedArray.swift,
 				Problems/Array/RotateArray.swift,
 				Problems/Array/SingleNumber.swift,
