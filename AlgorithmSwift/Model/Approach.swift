@@ -12,6 +12,7 @@ protocol ApproachProtocol {
 enum Technique: String {
   case Bitwise = "Bitwise Operation"
   case BruteForce = "Brute Force"
+  case CarryPropagation = "Carry Propagation"
   case Greedy = "Greedy"
   case HashTable = "Hash Table"
   case OnePass = "One-Pass"

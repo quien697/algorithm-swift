@@ -12,8 +12,14 @@ import Foundation
 // Leetcode 26
 //RemoveDuplicatesFromSortedArray.TwoPointer.run()
 
+// Leetcode 66
+//PlusOne.CarryPropagation.run()
+
 // Leetcode 122
 //BestTimeToBuyAndSellStockII.GreedyOnePass.run()
+
+// Leetcode 136
+//SingleNumber.Bitwise.run()
 
 // Leetcode 189
 //RotateArray.BruteForce.run()
@@ -23,9 +29,8 @@ import Foundation
 //ContainsDuplicate.BruteForce.run()
 //ContainsDuplicate.HashTable.run()
 
-// Leetcode 136
-//SingleNumber.Bitwise.run()
-
 // Leetcode 350
 //IntersectionOfTwoArraysII.SortingTwoPointer.run()
 //IntersectionOfTwoArraysII.Dictionary.run()
+
+
