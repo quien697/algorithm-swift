@@ -9,6 +9,10 @@ import Foundation
 
 // MARK: - Array
 
+// Letcode 1
+//TwoSum.BruteForce.run()
+//TwoSum.HashTable.run()
+
 // Leetcode 26
 //RemoveDuplicatesFromSortedArray.TwoPointer.run()
 

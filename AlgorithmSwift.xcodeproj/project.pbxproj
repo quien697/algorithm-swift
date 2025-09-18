@@ -36,6 +36,7 @@
 				Problems/Array/RemoveDuplicatesFromSortedArray.swift,
 				Problems/Array/RotateArray.swift,
 				Problems/Array/SingleNumber.swift,
+				Problems/Array/TwoSum.swift,
 			);
 			target = 60BACE442E76BEE5008BAD19 /* AlgorithmSwfitTests */;
 		};
