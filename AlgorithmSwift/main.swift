@@ -16,6 +16,9 @@ import Foundation
 // Leetcode 26
 //RemoveDuplicatesFromSortedArray.TwoPointer.run()
 
+// Leetcode 36
+//ValidSudoku.HashTable.run()
+
 // Leetcode 66
 //PlusOne.CarryPropagation.run()
 

@@ -37,6 +37,7 @@
 				Problems/Array/RotateArray.swift,
 				Problems/Array/SingleNumber.swift,
 				Problems/Array/TwoSum.swift,
+				Problems/Array/ValidSudoku.swift,
 			);
 			target = 60BACE442E76BEE5008BAD19 /* AlgorithmSwfitTests */;
 		};
