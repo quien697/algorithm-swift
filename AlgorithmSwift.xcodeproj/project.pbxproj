@@ -35,6 +35,7 @@
 				Problems/Array/PlusOne.swift,
 				Problems/Array/RemoveDuplicatesFromSortedArray.swift,
 				Problems/Array/RotateArray.swift,
+				Problems/Array/RotateImage.swift,
 				Problems/Array/SingleNumber.swift,
 				Problems/Array/TwoSum.swift,
 				Problems/Array/ValidSudoku.swift,

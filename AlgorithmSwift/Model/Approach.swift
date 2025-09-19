@@ -15,8 +15,10 @@ enum Technique: String {
   case CarryPropagation = "Carry Propagation"
   case Greedy = "Greedy"
   case HashTable = "Hash Table"
+  case Matrix = "Matrix"
   case OnePass = "One-Pass"
   case Reverse = "Reverse"
   case Sorting = "Sorting"
+  case Transpose = "Transpose"
   case TwoPointer = "Two Pointer"
 }

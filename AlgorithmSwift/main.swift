@@ -19,6 +19,9 @@ import Foundation
 // Leetcode 36
 //ValidSudoku.HashTable.run()
 
+// Leetcode 48
+RotateImage.Matrix.run()
+
 // Leetcode 66
 //PlusOne.CarryPropagation.run()
 

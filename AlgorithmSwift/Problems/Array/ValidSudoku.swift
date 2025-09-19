@@ -55,7 +55,7 @@ enum ValidSudoku: String{
   
   /**
    *
-   * Approach: HashTable
+   * Approach: Hash Table
    * Time: O(N ^ 2)
    * Space: O(N ^ 2)
    *
