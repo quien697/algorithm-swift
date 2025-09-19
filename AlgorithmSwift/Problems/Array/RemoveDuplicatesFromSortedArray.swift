@@ -15,9 +15,9 @@ import Foundation
  * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
  *
  */
-enum RemoveDuplicatesFromSortedArray: String {
-  case name = "Remove Duplicates from Sorted Array"
-  
+enum RemoveDuplicatesFromSortedArray: ProblemProtocol {
+  static let name: String = "Remove Duplicates from Sorted Array"
+  static let domain: Domain = .Array
   static let testCases: [([Int], Int)] = [
     ([1,1,2], 2),
     ([0,0,1,2,3,3,4,4,5], 6),
@@ -25,14 +25,16 @@ enum RemoveDuplicatesFromSortedArray: String {
   
   /**
    *
-   * Approach: Two pointer
+   * Approach: Sorting + Two Pointers (Slow-Fast)
    * Time: O(N)
    * Space: O(1)
    *
    */
-  enum TwoPointer: ApproachProtocol {
-    static var techniques = [
-      Technique.TwoPointer.rawValue
+  enum TwoPointers: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .Sorting,
+      .TwoPointers,
+      .SlowFast,
     ]
     
     static func solve(_ nums: inout [Int]) -> Int {
@@ -52,16 +54,16 @@ enum RemoveDuplicatesFromSortedArray: String {
     }
     
     static func run () {
-      print("=== \(RemoveDuplicatesFromSortedArray.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
+      printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
         var nums = testCase.0
-        let expected = testCase.1
         let result = solve(&nums)
+        let expected = testCase.1
         print("\nCase \(index + 1):")
         print("Nums = \(nums)")
         print("Result =", result, ",nums =", Array(nums.prefix(result)))
-        print("expected = ", expected)
+        print("Expected = ", expected)
       }
     }
   }

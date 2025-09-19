@@ -15,39 +15,26 @@ import Foundation
  * https://leetcode.com/problems/two-sum
  *
  **/
-enum TwoSum: String{
-  case name = "Two Sum"
-  
+enum TwoSum: ProblemProtocol {
+  static let name: String = "Two Sum"
+  static let domain: Domain = .Array
   static let testCases: [(([Int], Int), [Int])] = [
     (([2,7,11,15], 9), [0,1]),
     (([3,2,4], 6), [1,2]),
     (([3,3], 6), [0,1])
   ]
   
-  static func printResult(_  techniques: [String], _ solve: ([Int], Int) -> [Int]) {
-    print("=== \(TwoSum.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
-    
-    for (index, testCase) in testCases.enumerated() {
-      let nums = testCase.0.0
-      let target = testCase.0.1
-      let expected = testCase.1
-      print("\nCase \(index + 1):")
-      print("Nums = \(nums), Target = \(target)")
-      print("Result = ", solve(nums, target))
-      print("expected = ", expected)
-    }
-  }
-  
   /**
    *
    * Approach: Brute Force
+   * Techniques:
    * Time: O(N ^ 2)
    * Space: O(1)
    *
    */
   enum BruteForce: ApproachProtocol {
-    static var techniques = [
-      Technique.BruteForce.rawValue
+    static let approaches: [Approach] = [
+      .BruteForce,
     ]
     
     static func solve(_ nums: [Int], _ target: Int) -> [Int] {
@@ -65,20 +52,31 @@ enum TwoSum: String{
     }
     
     static func run() {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let nums = testCase.0.0
+        let target = testCase.0.1
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums = \(nums), Target = \(target)")
+        print("Result = ", solve(nums, target))
+        print("Expected = ", expected)
+      }
     }
   }
   
   /**
    *
-   * Approach: Hash Table
+   * Approach: Hash Table (Dictionary)
    * Time: O(N)
    * Space: O(1)
    *
    */
   enum HashTable: ApproachProtocol {
-    static var techniques = [
-      Technique.HashTable.rawValue
+    static let approaches: [Approach] = [
+      .HashTable,
+      .Dictionary,
     ]
     
     static func solve(_ nums: [Int], _ target: Int) -> [Int] {
@@ -95,7 +93,17 @@ enum TwoSum: String{
     }
     
     static func run () {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let nums = testCase.0.0
+        let target = testCase.0.1
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums = \(nums), Target = \(target)")
+        print("Result = ", solve(nums, target))
+        print("Expected = ", expected)
+      }
     }
   }
 }

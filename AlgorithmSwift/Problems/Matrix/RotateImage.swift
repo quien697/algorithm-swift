@@ -15,9 +15,9 @@ import Foundation
  * https://leetcode.com/problems/rotate-image
  *
  **/
-enum RotateImage: String{
-  case name = "Rotate Image"
-  
+enum RotateImage: ProblemProtocol {
+  static let name: String = "Rotate Image"
+  static let domain: Domain = .Matrix
   static let testCases: [([[Int]], [[Int]])] = [
     (
       [[1,2,3],[4,5,6],[7,8,9]],
@@ -31,16 +31,16 @@ enum RotateImage: String{
   
   /**
    *
-   * Approach: Matrix
-   * Techniques: Reverse + Transpose
+   * Approach: Matrix (Reverse + Transpose)
    * Time: O(N ^ 2)
    * Space: O(1)
    *
    */
   enum Matrix: ApproachProtocol {
-    static var techniques = [
-      Technique.Matrix.rawValue,
-      Technique.Transpose.rawValue
+    static let approaches: [Approach] = [
+      .Matrix,
+      .Reverse,
+      .Transpose,
     ]
     
     static func solve(_ matrix: inout [[Int]]) -> [[Int]] {
@@ -58,7 +58,7 @@ enum RotateImage: String{
     }
     
     static func run() {
-      print("=== \(RotateImage.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
+      printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
         var matrix = testCase.0
@@ -66,7 +66,7 @@ enum RotateImage: String{
         print("\nCase \(index + 1):")
         print("Matrix = \(matrix)")
         print("Result = ", solve(&matrix))
-        print("expected = ", expected)
+        print("Expected = ", expected)
       }
     }
   }

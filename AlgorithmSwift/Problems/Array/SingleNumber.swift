@@ -15,9 +15,9 @@ import Foundation
  * https://leetcode.com/problems/single-number
  *
  **/
-enum SingleNumber: String {
-  case name = "Single Number"
-  
+enum SingleNumber: ProblemProtocol {
+  static let name: String = "Single Number"
+  static let domain: Domain = .Array
   static let testCases: [([Int], Int)] = [
     ([1,2,2], 1),
     ([4,1,2,1,2], 4),
@@ -26,14 +26,15 @@ enum SingleNumber: String {
   
   /**
    *
-   * Approach: Bitwise Operation
+   * Approach: Bitwise (XOR)
    * Time: O(N)
    * Space: O(1)
    *
    */
   enum Bitwise: ApproachProtocol {
-    static var techniques = [
-      Technique.Bitwise.rawValue
+    static let approaches: [Approach] = [
+      .Bitwise,
+      .XOR,
     ]
     
     static func solve(_ nums: [Int]) -> Int {
@@ -51,7 +52,7 @@ enum SingleNumber: String {
     }
     
     static func run () {
-      print("=== \(SingleNumber.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
+      printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
         let nums = testCase.0
@@ -59,7 +60,7 @@ enum SingleNumber: String {
         print("\nCase \(index + 1):")
         print("Nums = \(nums)")
         print("Result = ", solve(nums))
-        print("expected = ", expected)
+        print("Expected = ", expected)
       }
     }
   }

@@ -15,9 +15,9 @@ import Foundation
  * https://leetcode.com/problems/plus-one
  *
  **/
-enum PlusOne: String {
-  case name = "Plus One"
-  
+enum PlusOne: ProblemProtocol {
+  static let name: String = "Plus One"
+  static let domain: Domain = .Array
   static let testCases: [([Int], [Int])] = [
     ([1,2,3], [1,2,4]),
     ([4,3,2,1], [4,3,2,2]),
@@ -26,14 +26,14 @@ enum PlusOne: String {
   
   /**
    *
-   * Approach: Carry Propagation
+   * Approach: Math
    * Time: O(N)
    * Space: O(N)
    *
    */
-  enum CarryPropagation: ApproachProtocol {
-    static var techniques = [
-      Technique.CarryPropagation.rawValue
+  enum Math: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .Math,
     ]
     
     static func solve(_ digits: [Int]) -> [Int] {
@@ -53,7 +53,7 @@ enum PlusOne: String {
     }
     
     static func run () {
-      print("=== \(PlusOne.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
+      printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
         let digits = testCase.0

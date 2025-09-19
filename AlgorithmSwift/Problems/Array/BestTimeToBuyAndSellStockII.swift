@@ -15,9 +15,9 @@ import Foundation
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
  *
  **/
-enum BestTimeToBuyAndSellStockII: String {
-  case name = "Best Time to Buy and Sell Stock II"
-  
+enum BestTimeToBuyAndSellStockII: ProblemProtocol {
+  static let name = "Best Time to Buy and Sell Stock II"
+  static let domain: Domain = .Array
   static let testCases: [([Int], Int)] = [
     ([7,1,5,3,6,4], 7),
     ([1,2,3,4,5], 4),
@@ -26,15 +26,14 @@ enum BestTimeToBuyAndSellStockII: String {
   
   /**
    *
-   * Approach: Greedy + One-Pass
+   * Approaches: Greedy
    * Time: O(N)
    * Space: O(1)
    *
    */
-  enum GreedyOnePass: ApproachProtocol {
-    static var techniques = [
-      Technique.Greedy.rawValue,
-      Technique.OnePass.rawValue
+  enum greedy: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .Greedy,
     ]
     
     static func solve(_ prices: [Int]) -> Int {
@@ -50,7 +49,7 @@ enum BestTimeToBuyAndSellStockII: String {
     }
     
     static func run () {
-      print("=== \(BestTimeToBuyAndSellStockII.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
+      printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
         let price = testCase.0
@@ -58,7 +57,7 @@ enum BestTimeToBuyAndSellStockII: String {
         print("\nCase \(index + 1):")
         print("Nums = \(price)")
         print("Result = ", solve(price))
-        print("expected = ", expected)
+        print("Expected = ", expected)
       }
     }
   }

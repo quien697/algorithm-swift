@@ -6,19 +6,26 @@
 //
 
 protocol ApproachProtocol {
-  static var techniques: [String] { get }
+  static var approaches: [Approach] { get }
 }
 
-enum Technique: String {
-  case Bitwise = "Bitwise Operation"
+/// Represents the main algorithmic approach used to solve a problem.
+/// And highlights specific techniques or tricks when needed.
+enum Approach: String {
+  case Bitwise = "Bitwise"
   case BruteForce = "Brute Force"
-  case CarryPropagation = "Carry Propagation"
+  case Dictionary = "Dictionary"
   case Greedy = "Greedy"
   case HashTable = "Hash Table"
   case Matrix = "Matrix"
+  case Math = "Math"
   case OnePass = "One-Pass"
   case Reverse = "Reverse"
+  case Set = "Set"
   case Sorting = "Sorting"
+  case SlowFast = "Slow-Fast"
+  case Simulation = "Simulation"
+  case TwoPointers = "Two Pointers"
   case Transpose = "Transpose"
-  case TwoPointer = "Two Pointer"
+  case XOR = "XOR"
 }

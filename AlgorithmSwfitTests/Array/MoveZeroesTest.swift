@@ -10,10 +10,10 @@ import XCTest
 
 final class MoveZeroesTest: XCTestCase {
   
-  func testCarryPropagation() throws {
+  func testTwoPointers() throws {
     MoveZeroes.testCases.forEach { input, expected in
       var nums = input
-      XCTAssertEqual(MoveZeroes.TwoPointer.solve(&nums), expected)
+      XCTAssertEqual(MoveZeroes.TwoPointers.solve(&nums), expected)
     }
   }
 }

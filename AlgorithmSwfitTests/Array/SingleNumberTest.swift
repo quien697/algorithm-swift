@@ -10,7 +10,7 @@ import XCTest
 
 final class SingleNumberTest: XCTestCase {
   
-  func testBitewise() throws {
+  func testBitwise() throws {
     SingleNumber.testCases.forEach { input, expected in
       XCTAssertEqual(SingleNumber.Bitwise.solve(input), expected)
     }

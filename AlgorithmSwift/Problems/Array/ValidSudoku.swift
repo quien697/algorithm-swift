@@ -15,9 +15,9 @@ import Foundation
  * https://leetcode.com/problems/valid-sudoku
  *
  **/
-enum ValidSudoku: String{
-  case name = "Valid Sudoku"
-  
+enum ValidSudoku: ProblemProtocol {
+  static let name: String = "Valid Sudoku"
+  static let domain: Domain = .Array
   static let testCases: [([[Character]], Bool)] = [
     (
       [["5","3",".",".","7",".",".",".","."],
@@ -55,16 +55,16 @@ enum ValidSudoku: String{
   
   /**
    *
-   * Approach: Hash Table
+   * Approach: Hash Table (Dictionary + Set)
    * Time: O(N ^ 2)
    * Space: O(N ^ 2)
    *
-   * Dictionary + Set
-   *
    */
   enum HashTable: ApproachProtocol {
-    static var techniques = [
-      Technique.HashTable.rawValue
+    static let approaches: [Approach] = [
+      .HashTable,
+      .Dictionary,
+      .Set,
     ]
     
     struct Box: Hashable {
@@ -103,7 +103,7 @@ enum ValidSudoku: String{
     }
     
     static func run() {
-      print("=== \(ValidSudoku.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
+      printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
         let board = testCase.0
@@ -111,7 +111,7 @@ enum ValidSudoku: String{
         print("\nCase \(index + 1):")
         print("Board = \(board)")
         print("Result = ", solve(board))
-        print("expected = ", expected)
+        print("Expected = ", expected)
       }
     }
   }

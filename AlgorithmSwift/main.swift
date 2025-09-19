@@ -14,19 +14,19 @@ import Foundation
 //TwoSum.HashTable.run()
 
 // Leetcode 26
-//RemoveDuplicatesFromSortedArray.TwoPointer.run()
+//RemoveDuplicatesFromSortedArray.TwoPointers.run()
 
 // Leetcode 36
 //ValidSudoku.HashTable.run()
 
 // Leetcode 48
-RotateImage.Matrix.run()
+//RotateImage.Matrix.run()
 
 // Leetcode 66
-//PlusOne.CarryPropagation.run()
+//PlusOne.Math.run()
 
 // Leetcode 122
-//BestTimeToBuyAndSellStockII.GreedyOnePass.run()
+//BestTimeToBuyAndSellStockII.greedy.run()
 
 // Leetcode 136
 //SingleNumber.Bitwise.run()
@@ -40,8 +40,8 @@ RotateImage.Matrix.run()
 //ContainsDuplicate.HashTable.run()
 
 // Leetcode 283
-//MoveZeroes.TwoPointer.run()
+//MoveZeroes.TwoPointers.run()
 
 // Leetcode 350
-//IntersectionOfTwoArraysII.SortingTwoPointer.run()
-//IntersectionOfTwoArraysII.Dictionary.run()
+//IntersectionOfTwoArraysII.SortingTwoPointers.run()
+//IntersectionOfTwoArraysII.HashTable.run()

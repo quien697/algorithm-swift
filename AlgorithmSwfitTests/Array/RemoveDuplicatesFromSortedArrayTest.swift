@@ -10,10 +10,10 @@ import XCTest
 
 final class RemoveDuplicatesFromSortedArrayTest: XCTestCase {
   
-  func testTwoPointer() throws {
+  func testTwoPointers() throws {
     RemoveDuplicatesFromSortedArray.testCases.forEach { input, expected in
       var nums = input
-      XCTAssertEqual(RemoveDuplicatesFromSortedArray.TwoPointer.solve(&nums), expected)
+      XCTAssertEqual(RemoveDuplicatesFromSortedArray.TwoPointers.solve(&nums), expected)
     }
   }
 }

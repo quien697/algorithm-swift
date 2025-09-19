@@ -10,9 +10,9 @@ import XCTest
 
 final class PlusOneTest: XCTestCase {
   
-  func testCarryPropagation() throws {
+  func testMath() throws {
     PlusOne.testCases.forEach { input, expected in
-      XCTAssertEqual(PlusOne.CarryPropagation.solve(input), expected)
+      XCTAssertEqual(PlusOne.Math.solve(input), expected)
     }
   }
 }

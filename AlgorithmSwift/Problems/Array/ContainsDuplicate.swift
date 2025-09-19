@@ -15,38 +15,25 @@ import Foundation
  * https://leetcode.com/problems/contains-duplicate
  *
  **/
-enum ContainsDuplicate: String {
-  case name = "Contains Duplicate"
-  
+enum ContainsDuplicate: ProblemProtocol {
+  static let name: String = "Contains Duplicate"
+  static let domain: Domain = .Array
   static let testCases: [([Int], Bool)] = [
     ([1,2,3,1], true),
     ([1,2,3,4], false),
     ([1,1,1,3,3,4,3,2,4,2], true)
   ]
   
-  static func printResult(_ techniques: [String], _ solve: ([Int]) -> Bool) {
-    print("=== \(RotateArray.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
-    
-    for (index, testCase) in testCases.enumerated() {
-      let nums = testCase.0
-      let expected = testCase.1
-      print("\nCase \(index + 1):")
-      print("Nums = \(nums)")
-      print("Result = ", solve(nums))
-      print("expected = ", expected)
-    }
-  }
-  
   /**
    *
-   * Approach: Brute Force
+   * Approaches: Brute Force
    * Time: O(N x N)
    * Space: O(1)
    *
    */
   enum BruteForce: ApproachProtocol {
-    static var techniques = [
-      Technique.BruteForce.rawValue
+    static let approaches: [Approach] = [
+      .BruteForce,
     ]
     
     static func solve(_ nums: [Int]) -> Bool {
@@ -65,20 +52,30 @@ enum ContainsDuplicate: String {
     }
     
     static func run () {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let nums = testCase.0
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums = \(nums)")
+        print("Result = ", solve(nums))
+        print("expected = ", expected)
+      }
     }
   }
   
   /**
    *
-   * Approach: Hash Table
+   * Approaches: Hash Table (Set)
    * Time: O(N)
    * Space: O(N)
    *
    */
   enum HashTable: ApproachProtocol {
-    static var techniques = [
-      Technique.HashTable.rawValue
+    static let approaches: [Approach] = [
+      .HashTable,
+      .Set,
     ]
     
     static func solve(_ nums: [Int]) -> Bool {
@@ -98,7 +95,16 @@ enum ContainsDuplicate: String {
     }
     
     static func run () {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let nums = testCase.0
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums = \(nums)")
+        print("Result = ", solve(nums))
+        print("Expected = ", expected)
+      }
     }
   }
 }

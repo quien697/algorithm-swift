@@ -27,7 +27,9 @@
 		60BACE532E76C04A008BAD19 /* Exceptions for "AlgorithmSwift" folder in "AlgorithmSwfitTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Helper/Helper.swift,
 				Model/Approach.swift,
+				Model/Domain.swift,
 				Problems/Array/BestTimeToBuyAndSellStockII.swift,
 				Problems/Array/ContainsDuplicate.swift,
 				Problems/Array/IntersectionOfTwoArraysII.swift,
@@ -35,10 +37,10 @@
 				Problems/Array/PlusOne.swift,
 				Problems/Array/RemoveDuplicatesFromSortedArray.swift,
 				Problems/Array/RotateArray.swift,
-				Problems/Array/RotateImage.swift,
 				Problems/Array/SingleNumber.swift,
 				Problems/Array/TwoSum.swift,
 				Problems/Array/ValidSudoku.swift,
+				Problems/Matrix/RotateImage.swift,
 			);
 			target = 60BACE442E76BEE5008BAD19 /* AlgorithmSwfitTests */;
 		};

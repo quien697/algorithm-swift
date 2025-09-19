@@ -12,7 +12,7 @@ final class BestTimeToBuyAndSellStockIITest: XCTestCase {
   
   func testGreedy() throws {
     BestTimeToBuyAndSellStockII.testCases.forEach { input, expected in
-      XCTAssertEqual(BestTimeToBuyAndSellStockII.GreedyOnePass.solve(input), expected)
+      XCTAssertEqual(BestTimeToBuyAndSellStockII.greedy.solve(input), expected)
     }
   }
 }

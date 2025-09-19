@@ -15,9 +15,9 @@ import Foundation
  * https://leetcode.com/problems/move-zeroes
  *
  **/
-enum MoveZeroes: String {
-  case name = "Move Zeroes"
-  
+enum MoveZeroes: ProblemProtocol {
+  static let name: String = "Move Zeroes"
+  static let domain: Domain = .Array
   static let testCases: [([Int], [Int])] = [
     ([0,1,0,3,12], [1,3,12,0,0]),
     ([0], [0]),
@@ -25,14 +25,15 @@ enum MoveZeroes: String {
   
   /**
    *
-   * Approach: Two Pointer
+   * Approach: Two Pointers (Slow-Fast)
    * Time: O(N)
    * Space: O(1)
    *
    */
-  enum TwoPointer: ApproachProtocol {
-    static var techniques = [
-      Technique.TwoPointer.rawValue
+  enum TwoPointers: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .TwoPointers,
+      .SlowFast,
     ]
     
     static func solve(_ nums: inout [Int]) -> [Int] {
@@ -49,7 +50,7 @@ enum MoveZeroes: String {
     }
     
     static func run () {
-      print("=== \(MoveZeroes.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
+      printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
         var nums = testCase.0
@@ -57,7 +58,7 @@ enum MoveZeroes: String {
         print("\nCase \(index + 1):")
         print("Nums = \(nums)")
         print("Result = ", solve(&nums))
-        print("expected = ", expected)
+        print("Expected = ", expected)
       }
     }
   }

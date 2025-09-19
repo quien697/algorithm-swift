@@ -15,27 +15,13 @@ import Foundation
  * https://leetcode.com/problems/rotate-array
  *
  **/
-enum RotateArray: String{
-  case name = "Rotate Array"
-  
+enum RotateArray: ProblemProtocol {
+  static let name: String = "Rotate Array"
+  static let domain: Domain = .Array
   static let testCases: [(([Int], Int), [Int])] = [
     (([1,2,3,4,5,6,7], 3), [5,6,7,1,2,3,4]),
     (([-1,-100,3,99], 2), [3,99,-1,-100])
   ]
-  
-  static func printResult(_  techniques: [String], _ solve: (inout [Int], Int) -> [Int]) {
-    print("=== \(RotateArray.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
-    
-    for (index, testCase) in testCases.enumerated() {
-      var nums = testCase.0.0
-      let k = testCase.0.1
-      let expected = testCase.1
-      print("\nCase \(index + 1):")
-      print("Nums = \(nums)")
-      print("Result = ", solve(&nums, k))
-      print("expected = ", expected)
-    }
-  }
   
   /**
    *
@@ -45,8 +31,8 @@ enum RotateArray: String{
    *
    */
   enum BruteForce: ApproachProtocol {
-    static var techniques = [
-      Technique.BruteForce.rawValue
+    static let approaches: [Approach] = [
+      .BruteForce,
     ]
     
     static func solve(_ nums: inout [Int], _ k: Int) -> [Int] {
@@ -60,7 +46,16 @@ enum RotateArray: String{
     }
     
     static func run() {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        var nums = testCase.0.0
+        let k = testCase.0.1
+        print("\nCase \(index + 1):")
+        print("Nums = \(nums)")
+        print("Result = ", solve(&nums, k))
+        print("expected = ", testCase.1)
+      }
     }
   }
   
@@ -72,8 +67,8 @@ enum RotateArray: String{
    *
    */
   enum Reverse: ApproachProtocol {
-    static var techniques = [
-      Technique.Reverse.rawValue
+    static let approaches: [Approach] = [
+      .Reverse,
     ]
     
     static func solve(_ nums: inout [Int], _ k: Int) -> [Int] {
@@ -88,7 +83,17 @@ enum RotateArray: String{
     }
     
     static func run () {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        var nums = testCase.0.0
+        let k = testCase.0.1
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums = \(nums), k = \(k)")
+        print("Result = ", solve(&nums, k))
+        print("Expected = ", expected)
+      }
     }
   }
 }

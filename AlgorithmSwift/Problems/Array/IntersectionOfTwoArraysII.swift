@@ -15,39 +15,25 @@ import Foundation
  * https://leetcode.com/problems/intersection-of-two-arrays-ii
  *
  **/
-enum IntersectionOfTwoArraysII: String {
-  case name = "Intersection of Two Arrays II"
-  
+enum IntersectionOfTwoArraysII: ProblemProtocol {
+  static let name: String = "Intersection of Two Arrays II"
+  static let domain: Domain = .Array
   static let testCases: [(([Int], [Int]), [Int])] = [
     (([1,2,2,1], [2,2]), [2,2]),
     (([4,9,5], [9,4,9,8,4]), [4,9]),
   ]
   
-  static func printResult(_  techniques: [String], _ solve: ([Int], [Int]) -> [Int]) {
-    print("=== \(IntersectionOfTwoArraysII.name.rawValue) (\(techniques.joined(separator: " + "))) ===");
-    
-    for (index, testCase) in testCases.enumerated() {
-      let nums1 = testCase.0.0
-      let nums2 = testCase.0.1
-      let expected = testCase.1
-      print("\nCase \(index + 1):")
-      print("Nums1 = \(nums1), Nums2 = \(nums2)")
-      print("Result = ", solve(nums1, nums2))
-      print("expected = ", expected)
-    }
-  }
-  
   /**
    *
-   * Approach: Sorting + Two Pointer
+   * Approach: Sorting + Two Pointers
    * Time: O(N log N + M log M)
    * Space: O(N + M)
    *
    */
-  enum SortingTwoPointer {
-    static let techniques = [
-      Technique.Sorting.rawValue,
-      Technique.TwoPointer.rawValue
+  enum SortingTwoPointers: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .Sorting,
+      .TwoPointers,
     ]
     
     static func solve(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
@@ -72,20 +58,31 @@ enum IntersectionOfTwoArraysII: String {
     }
     
     static func run () {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let nums1 = testCase.0.0
+        let nums2 = testCase.0.1
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums1 = \(nums1), Nums2 = \(nums2)")
+        print("Result = ", solve(nums1, nums2))
+        print("Expected = ", expected)
+      }
     }
   }
   
   /**
    *
-   * Approach: Hash Table
+   * Approach: Hash Table (Dictionary)
    * Time: O(N + M)
    * Space: O(min(N, M))
    *
    */
-  enum HashTable {
-    static var techniques = [
-      Technique.HashTable.rawValue
+  enum HashTable: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .HashTable,
+      .Dictionary,
     ]
     
     static func solve(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
@@ -107,7 +104,17 @@ enum IntersectionOfTwoArraysII: String {
     }
     
     static func run () {
-      printResult(techniques, solve)
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let nums1 = testCase.0.0
+        let nums2 = testCase.0.1
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums1 = \(nums1), Nums2 = \(nums2)")
+        print("Result = ", solve(nums1, nums2))
+        print("Expected = ", expected)
+      }
     }
   }
 }
