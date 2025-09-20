@@ -41,6 +41,7 @@
 				Problems/Array/TwoSum.swift,
 				Problems/Array/ValidSudoku.swift,
 				Problems/Matrix/RotateImage.swift,
+				Problems/String/ReverseString.swift,
 			);
 			target = 60BACE442E76BEE5008BAD19 /* AlgorithmSwfitTests */;
 		};

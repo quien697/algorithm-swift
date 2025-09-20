@@ -25,6 +25,7 @@ enum Approach: String {
   case Sorting = "Sorting"
   case SlowFast = "Slow-Fast"
   case Simulation = "Simulation"
+  case Swap = "Swap"
   case TwoPointers = "Two Pointers"
   case Transpose = "Transpose"
   case XOR = "XOR"

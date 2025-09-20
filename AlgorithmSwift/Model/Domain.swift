@@ -8,6 +8,7 @@
 enum Domain: String {
   case Array = "Array"
   case Matrix = "Matrix"
+  case String = "String"
 }
 
 protocol ProblemProtocol {
