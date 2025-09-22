@@ -16,7 +16,7 @@ import Foundation
  *
  **/
 enum FirstUniqueCharacterInAString: ProblemProtocol {
-  static let name: String = "Reverse String"
+  static let name: String = "First Unique Character in a String"
   static let domain: Domain = .String
   static let testCases: [(String, Int)] = [
     ("leetcode", 0),

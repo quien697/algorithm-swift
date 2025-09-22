@@ -49,11 +49,14 @@ import Foundation
 // Leetcode 7
 //ReverseInteger.Math.run()
 
+// Leetcode 242
+//ValidAnagram.HashTable.run()
+
 // Leetcode 344
 //ReverseString.TwoPointers.run()
 
 // Leetcode 387
-FirstUniqueCharacterInAString.HashTable.run()
+//FirstUniqueCharacterInAString.HashTable.run()
 
 // MARK: - Matrix
 

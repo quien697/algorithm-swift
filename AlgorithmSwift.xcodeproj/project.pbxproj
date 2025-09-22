@@ -44,6 +44,7 @@
 				Problems/String/FirstUniqueCharacterInAString.swift,
 				Problems/String/ReverseInteger.swift,
 				Problems/String/ReverseString.swift,
+				Problems/String/ValidAnagram.swift,
 			);
 			target = 60BACE442E76BEE5008BAD19 /* AlgorithmSwfitTests */;
 		};
