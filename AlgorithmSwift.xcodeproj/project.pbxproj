@@ -41,6 +41,7 @@
 				Problems/Array/TwoSum.swift,
 				Problems/Array/ValidSudoku.swift,
 				Problems/Matrix/RotateImage.swift,
+				Problems/String/FirstUniqueCharacterInAString.swift,
 				Problems/String/ReverseInteger.swift,
 				Problems/String/ReverseString.swift,
 			);

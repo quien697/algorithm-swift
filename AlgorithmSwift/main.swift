@@ -52,6 +52,8 @@ import Foundation
 // Leetcode 344
 //ReverseString.TwoPointers.run()
 
+// Leetcode 387
+FirstUniqueCharacterInAString.HashTable.run()
 
 // MARK: - Matrix
 
