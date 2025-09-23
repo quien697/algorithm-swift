@@ -10,7 +10,7 @@ import XCTest
 
 final class FirstUniqueCharacterInAStringTest: XCTestCase {
   
-  func testMatrix() throws {
+  func testHashTable() throws {
     FirstUniqueCharacterInAString.testCases.forEach { input, expected in
       XCTAssertEqual(FirstUniqueCharacterInAString.HashTable.solve(input), expected)
     }

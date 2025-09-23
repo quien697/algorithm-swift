@@ -49,6 +49,10 @@ import Foundation
 // Leetcode 7
 //ReverseInteger.Math.run()
 
+// Leetcode 125
+//ValidPalindrome.TwoPointers.run()
+//ValidPalindrome.Reverse.run()
+
 // Leetcode 242
 //ValidAnagram.HashTable.run()
 

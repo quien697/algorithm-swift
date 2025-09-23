@@ -29,4 +29,5 @@ enum Approach: String {
   case TwoPointers = "Two Pointers"
   case Transpose = "Transpose"
   case XOR = "XOR"
+  case LeftRight = "Left-Right"
 }

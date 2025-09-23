@@ -10,7 +10,7 @@ import XCTest
 
 final class ReverseStringTest: XCTestCase {
   
-  func testMatrix() throws {
+  func testTwoPointers() throws {
     ReverseString.testCases.forEach { input, expected in
       var s = input
       XCTAssertEqual(ReverseString.TwoPointers.solve(&s), expected)

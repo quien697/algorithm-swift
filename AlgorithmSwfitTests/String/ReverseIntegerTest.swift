@@ -10,7 +10,7 @@ import XCTest
 
 final class ReverseIntegerTest: XCTestCase {
   
-  func testMatrix() throws {
+  func testMath() throws {
     ReverseInteger.testCases.forEach { input, expected in
       XCTAssertEqual(ReverseInteger.Math.solve(input), expected)
     }

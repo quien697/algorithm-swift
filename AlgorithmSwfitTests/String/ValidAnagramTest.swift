@@ -10,7 +10,7 @@ import XCTest
 
 final class ValidAnagramTest: XCTestCase {
   
-  func testMatrix() throws {
+  func testHashTable() throws {
     ValidAnagram.testCases.forEach { input, expected in
       let s = input.0
       let t = input.1
