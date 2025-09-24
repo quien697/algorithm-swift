@@ -44,6 +44,7 @@
 				Problems/String/FirstUniqueCharacterInAString.swift,
 				Problems/String/ReverseInteger.swift,
 				Problems/String/ReverseString.swift,
+				Problems/String/StringToIntegerATOI.swift,
 				Problems/String/ValidAnagram.swift,
 				Problems/String/ValidPalindrome.swift,
 			);

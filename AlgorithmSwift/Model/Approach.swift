@@ -30,4 +30,5 @@ enum Approach: String {
   case Transpose = "Transpose"
   case XOR = "XOR"
   case LeftRight = "Left-Right"
+  case StringTraversal = "String Traversal"
 }

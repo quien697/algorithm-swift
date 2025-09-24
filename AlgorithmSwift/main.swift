@@ -49,6 +49,9 @@ import Foundation
 // Leetcode 7
 //ReverseInteger.Math.run()
 
+// Letcode 8
+//StringToIntegerATOI.StringTraversal.run()
+
 // Leetcode 125
 //ValidPalindrome.TwoPointers.run()
 //ValidPalindrome.Reverse.run()
