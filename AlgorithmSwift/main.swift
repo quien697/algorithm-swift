@@ -52,6 +52,9 @@ import Foundation
 // Letcode 8
 //StringToIntegerATOI.StringTraversal.run()
 
+// Leetcode 28
+FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearch.run()
+
 // Leetcode 125
 //ValidPalindrome.TwoPointers.run()
 //ValidPalindrome.Reverse.run()
