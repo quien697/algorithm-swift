@@ -10,7 +10,7 @@ import XCTest
 
 final class FindTheIndexOfTheFirstOccurrenceInAStringTest: XCTestCase {
   
-  func testSlidingWindow() throws {
+  func testBruteForceSubstringSearch() throws {
     FindTheIndexOfTheFirstOccurrenceInAString.testCases.forEach { input, expected in
       let haystack = input.0
       let needle = input.1

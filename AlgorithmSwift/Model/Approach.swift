@@ -22,6 +22,7 @@ enum Approach: String {
   case Matrix = "Matrix"
   case Math = "Math"
   case OnePass = "One-Pass"
+  case Prefix = "Prefix"
   case Reverse = "Reverse"
   case Set = "Set"
   case SlowFast = "Slow-Fast"

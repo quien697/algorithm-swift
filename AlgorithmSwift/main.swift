@@ -49,11 +49,14 @@ import Foundation
 // Leetcode 7
 //ReverseInteger.Math.run()
 
-// Letcode 8
+// Leetcode 8
 //StringToIntegerATOI.StringTraversal.run()
 
+// Leetcode 14
+//LongestCommonPrefix.StringTraversal.run()
+
 // Leetcode 28
-FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearch.run()
+//FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearch.run()
 
 // Leetcode 125
 //ValidPalindrome.TwoPointers.run()

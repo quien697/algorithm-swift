@@ -43,6 +43,7 @@
 				Problems/Matrix/RotateImage.swift,
 				Problems/String/FindTheIndexOfTheFirstOccurrenceInAString.swift,
 				Problems/String/FirstUniqueCharacterInAString.swift,
+				Problems/String/LongestCommonPrefix.swift,
 				Problems/String/ReverseInteger.swift,
 				Problems/String/ReverseString.swift,
 				Problems/String/StringToIntegerATOI.swift,
