@@ -33,6 +33,7 @@
 				Problems/Array/BestTimeToBuyAndSellStockII.swift,
 				Problems/Array/ContainsDuplicate.swift,
 				Problems/Array/IntersectionOfTwoArraysII.swift,
+				Problems/Array/MergeSortedArray.swift,
 				Problems/Array/MoveZeroes.swift,
 				Problems/Array/PlusOne.swift,
 				Problems/Array/RemoveDuplicatesFromSortedArray.swift,
