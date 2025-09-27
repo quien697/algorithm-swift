@@ -1,5 +1,5 @@
 //
-//  Searching.swift
+//  LinearSearch.swift
 //  AlgorithmSwift
 //
 //  Created by Quien on 2025-09-26.
@@ -12,10 +12,11 @@
 /// - Parameters:
 ///   - collection: An array of `Equatable` elements
 ///   - target: The element to find
-/// - Returns: The index of `target`,  otherwise `nil`
+/// - Returns: The index of `target` if found,  otherwise `nil`
 func linearSearch<T: Equatable>(in collection: [T], for target: T) -> Int? {
   for (index, element) in collection.enumerated() where element == target {
     return index
   }
+  
   return nil
 }

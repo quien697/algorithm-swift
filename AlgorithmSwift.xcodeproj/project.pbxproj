@@ -27,7 +27,8 @@
 		60BACE532E76C04A008BAD19 /* Exceptions for "AlgorithmSwift" folder in "AlgorithmSwfitTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Algorithm/SearchingSorting/Searching.swift,
+				Algorithm/Searching/BinarySearch.swift,
+				Algorithm/Searching/LinearSearch.swift,
 				Helper/Helper.swift,
 				Model/Approach.swift,
 				Model/Domain.swift,

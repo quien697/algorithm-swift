@@ -1,5 +1,5 @@
 //
-//  SearchingTest.swift
+//  LinearSearchTest.swift
 //  AlgorithmSwift
 //
 //  Created by Quien on 2025-09-26.
@@ -9,7 +9,7 @@ import XCTest
 
 @testable import AlgorithmSwift
 
-final class SearchingTest: XCTestCase {
+final class LinearSearchTest: XCTestCase {
   let intCases: [([Int], Int, Int?)] = [
     ([3, 7, 1, 9], 7, 1),
     ([1, 2, 3], 99, nil),
