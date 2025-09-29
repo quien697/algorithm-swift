@@ -38,7 +38,7 @@ enum CountPrimes: ProblemProtocol {
     ]
     
     static func solve(_ n: Int) -> Int {
-      guard n > 2 else { return 0 }
+      guard n > 1 else { return 0 }
       
       var primes  = Array(repeating: true, count: n)
       primes[0] = false

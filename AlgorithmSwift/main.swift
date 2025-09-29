@@ -88,3 +88,6 @@ import Foundation
 
 // Leetcode 204
 //CountPrimes.Math.run()
+
+// Leetcode 326
+PowerOfThree.Math.run()
