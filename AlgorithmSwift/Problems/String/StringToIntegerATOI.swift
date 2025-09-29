@@ -40,7 +40,7 @@ enum StringToIntegerATOI: ProblemProtocol {
     ]
     
     static func solve(_ s: String) -> Int {
-      var s = s.trimmingCharacters(in: .whitespaces)
+      let s = s.trimmingCharacters(in: .whitespaces)
       guard !s.isEmpty else { return 0 }
       
       let intMax = Int(Int32.max)

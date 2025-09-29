@@ -74,6 +74,9 @@ import Foundation
 // Leetcode 387
 //FirstUniqueCharacterInAString.HashTable.run()
 
+// Leetcode 412
+//FizzBuzz.Math.run()
+
 // MARK: - Matrix
 
 // Leetcode 48

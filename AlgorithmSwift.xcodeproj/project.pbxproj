@@ -27,8 +27,8 @@
 		60BACE532E76C04A008BAD19 /* Exceptions for "AlgorithmSwift" folder in "AlgorithmSwfitTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Algorithm/Searching/BinarySearch.swift,
-				Algorithm/Searching/LinearSearch.swift,
+				Algorithm/Search/BinarySearch.swift,
+				Algorithm/Search/LinearSearch.swift,
 				Helper/Helper.swift,
 				Model/Approach.swift,
 				Model/Domain.swift,
@@ -46,6 +46,7 @@
 				Problems/Matrix/RotateImage.swift,
 				Problems/String/FindTheIndexOfTheFirstOccurrenceInAString.swift,
 				Problems/String/FirstUniqueCharacterInAString.swift,
+				Problems/String/FizzBuzz.swift,
 				Problems/String/LongestCommonPrefix.swift,
 				Problems/String/ReverseInteger.swift,
 				Problems/String/ReverseString.swift,

@@ -19,10 +19,11 @@ func binarySearch<T: Comparable>(in collection: [T], for target: T) -> Int? {
   
   while lower <= upper {
     let mid = lower + (upper - lower) / 2
+    let value = collection[mid]
     
-    if collection[mid] == target {
+    if value == target {
       return mid
-    } else if collection[mid] < target {
+    } else if value < target {
       lower = mid + 1
     } else {
       upper = mid - 1

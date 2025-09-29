@@ -61,9 +61,9 @@ enum MergeSortedArray: ProblemProtocol {
       
       for (index, testCase) in testCases.enumerated() {
         var nums1 = testCase.0.0
-        var m = testCase.0.1
-        var nums2 = testCase.0.2
-        var n = testCase.0.3
+        let m = testCase.0.1
+        let nums2 = testCase.0.2
+        let n = testCase.0.3
         let expected = testCase.1
         print("\nCase \(index + 1):")
         print("Nums1 = \(nums1), m = \(m)")
