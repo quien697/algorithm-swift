@@ -10,7 +10,7 @@ import XCTest
 
 final class FizzBuzzTest: XCTestCase {
   
-  func testFizzBuzz() throws {
+  func testMath() throws {
     FizzBuzz.testCases.forEach { input, expected in
       XCTAssertEqual(FizzBuzz.Math.solve(input), expected)
     }

@@ -7,6 +7,7 @@
 
 enum Domain: String {
   case Array = "Array"
+  case Math = "Math"
   case Matrix = "Matrix"
   case Search = "Search"
   case String = "String"

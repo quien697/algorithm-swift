@@ -34,4 +34,5 @@ enum Approach: String {
   case Transpose = "Transpose"
   case TwoPointers = "Two Pointers"
   case XOR = "XOR"
+  case SieveOfEratosthenes = "Sieve of Eratosthenes"
 }

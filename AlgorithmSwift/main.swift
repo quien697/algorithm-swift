@@ -77,7 +77,14 @@ import Foundation
 // Leetcode 412
 //FizzBuzz.Math.run()
 
+
 // MARK: - Matrix
 
 // Leetcode 48
 //RotateImage.Matrix.run()
+
+
+// MARK: - Math
+
+// Leetcode 204
+//CountPrimes.Math.run()
