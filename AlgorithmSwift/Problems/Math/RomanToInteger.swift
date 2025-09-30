@@ -39,7 +39,7 @@ enum RomanToInteger: ProblemProtocol {
     ]
     
     static func solve(_ s: String) -> Int {
-      let map: [Character: Int] = [
+      let dict: [Character: Int] = [
         "I": 1,
         "V": 5,
         "X": 10,
@@ -53,7 +53,7 @@ enum RomanToInteger: ProblemProtocol {
       var result = 0
       
       for char in s.reversed() {
-        curr = map[char]!
+        curr = dict[char]!
         result += curr >= prev ? curr : -curr
         prev = curr
       }

@@ -44,6 +44,7 @@
 				Problems/Array/TwoSum.swift,
 				Problems/Array/ValidSudoku.swift,
 				Problems/Math/CountPrimes.swift,
+				Problems/Math/IntegerToRoman.swift,
 				Problems/Math/PowerOfThree.swift,
 				Problems/Math/RomanToInteger.swift,
 				Problems/Matrix/RotateImage.swift,
