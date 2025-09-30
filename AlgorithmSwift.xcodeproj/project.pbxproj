@@ -45,6 +45,7 @@
 				Problems/Array/ValidSudoku.swift,
 				Problems/Math/CountPrimes.swift,
 				Problems/Math/PowerOfThree.swift,
+				Problems/Math/RomanToInteger.swift,
 				Problems/Matrix/RotateImage.swift,
 				Problems/String/FindTheIndexOfTheFirstOccurrenceInAString.swift,
 				Problems/String/FirstUniqueCharacterInAString.swift,
