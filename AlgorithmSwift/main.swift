@@ -25,8 +25,12 @@ import Foundation
 // Leetcode 88
 //MergeSortedArray.TwoPointers.run()
 
+// Leetcode 121
+//BestTimeToBuyAndSellStock.Greedy.run()
+//BestTimeToBuyAndSellStock.DynamicProblemming.run()
+
 // Leetcode 122
-//BestTimeToBuyAndSellStockII.greedy.run()
+//BestTimeToBuyAndSellStockII.Greedy.run()
 
 // Leetcode 136
 //SingleNumber.Bitwise.run()

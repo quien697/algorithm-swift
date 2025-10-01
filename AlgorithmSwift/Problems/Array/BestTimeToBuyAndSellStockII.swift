@@ -31,7 +31,7 @@ enum BestTimeToBuyAndSellStockII: ProblemProtocol {
    * Space: O(1)
    *
    */
-  enum greedy: ApproachProtocol {
+  enum Greedy: ApproachProtocol {
     static let approaches: [Approach] = [
       .Greedy,
     ]
