@@ -97,3 +97,11 @@ import Foundation
 
 // Leetcode 326
 //PowerOfThree.Math.run()
+
+
+// MARK: - Dynamic Programming
+
+// Leetcode 70
+//ClimbingStairs.DPBottomUp.run()
+//ClimbingStairs.DPBottomUpNoSpace.run()
+//ClimbingStairs.DPTopDown.run()

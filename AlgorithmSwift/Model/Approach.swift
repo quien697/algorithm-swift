@@ -13,8 +13,10 @@ protocol ApproachProtocol {
 /// And highlights specific techniques or tricks when needed.
 enum Approach: String {
   case Bitwise = "Bitwise"
+  case BottomUp = "Bottom Up (Tabulation)"
   case BruteForce = "Brute Force"
   case BruteForceSubstringSearch = "Brute Force Substring Search"
+  case DynamicProgramming = "Dynamic Programming"
   case Dictionary = "Dictionary"
   case Greedy = "Greedy"
   case HashTable = "Hash Table"
@@ -23,6 +25,7 @@ enum Approach: String {
   case Math = "Math"
   case OnePass = "One-Pass"
   case Prefix = "Prefix"
+  case Recursion = "Recursion"
   case Reverse = "Reverse"
   case Set = "Set"
   case SlowFast = "Slow-Fast"
@@ -31,6 +34,7 @@ enum Approach: String {
   case Sorting = "Sorting"
   case StringTraversal = "String Traversal"
   case Swap = "Swap"
+  case TopDown = "Top Down (Memorization)"
   case Transpose = "Transpose"
   case TwoPointers = "Two Pointers"
   case XOR = "XOR"
