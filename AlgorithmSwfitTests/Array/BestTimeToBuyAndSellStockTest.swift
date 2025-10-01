@@ -16,9 +16,9 @@ final class BestTimeToBuyAndSellStockTest: XCTestCase {
     }
   }
   
-  func testDynamicProblemming() throws {
+  func testDynamicProgramming() throws {
     BestTimeToBuyAndSellStock.testCases.forEach { input, expected in
-      XCTAssertEqual(BestTimeToBuyAndSellStock.DynamicProblemming.solve(input), expected)
+      XCTAssertEqual(BestTimeToBuyAndSellStock.DynamicProgramming.solve(input), expected)
     }
   }
 }

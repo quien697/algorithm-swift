@@ -27,10 +27,11 @@ import Foundation
 
 // Leetcode 121
 //BestTimeToBuyAndSellStock.Greedy.run()
-//BestTimeToBuyAndSellStock.DynamicProblemming.run()
+//BestTimeToBuyAndSellStock.DynamicProgramming.run()
 
 // Leetcode 122
 //BestTimeToBuyAndSellStockII.Greedy.run()
+//BestTimeToBuyAndSellStockII.DynamicProgramming.run()
 
 // Leetcode 136
 //SingleNumber.Bitwise.run()

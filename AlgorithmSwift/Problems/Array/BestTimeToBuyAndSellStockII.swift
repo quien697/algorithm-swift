@@ -61,4 +61,45 @@ enum BestTimeToBuyAndSellStockII: ProblemProtocol {
       }
     }
   }
+  
+  /**
+   *
+   * Approaches: Dynamic Programming (Bottom Up)
+   * Time: O(N)
+   * Space: O(N)
+   *
+   * Relation: dp[n] = dp[n-1] + max(0, prices[n] - prices[n-1])
+   *
+   */
+  enum DynamicProgramming: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .DynamicProgramming,
+      .BottomUp,
+    ]
+    
+    static func solve(_ prices: [Int]) -> Int {
+      let n = prices.count
+      var dp = [Int](repeating: 0, count: n)
+      
+      for i in 1..<n {
+        let profit = prices[i] > prices[i - 1] ? prices[i] - prices[i - 1] : 0
+        dp[i] = dp[i - 1] + profit
+      }
+      
+      return dp[n - 1]
+    }
+    
+    static func run () {
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let price = testCase.0
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("Nums = \(price)")
+        print("Result = ", solve(price))
+        print("Expected = ", expected)
+      }
+    }
+  }
 }

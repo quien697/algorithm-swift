@@ -65,12 +65,14 @@ enum BestTimeToBuyAndSellStock: ProblemProtocol {
   
   /**
    *
-   * Approaches: Dynamic Programming (BottomUp)
+   * Approaches: Dynamic Programming (Bottom Up)
    * Time: O(N)
    * Space: O(N)
    *
+   * Relation: dp[n] = max(dp[i-1], (prices[n] - minPrice))
+   *
    */
-  enum DynamicProblemming: ApproachProtocol {
+  enum DynamicProgramming: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
       .BottomUp,
@@ -79,12 +81,12 @@ enum BestTimeToBuyAndSellStock: ProblemProtocol {
     static func solve(_ prices: [Int]) -> Int {
       let n = prices.count
       var dp = [Int](repeating: 0, count: n)
-      var buy = prices[0]
+      var minPrice = prices[0]
       
       for i in 1..<n {
-        let sell = prices[i]
-        buy = min(buy, sell)
-        dp[i] = max(dp[i - 1], (sell - buy))
+        let price = prices[i]
+        minPrice = min(minPrice, price)
+        dp[i] = max(dp[i - 1], (price - minPrice))
       }
       
       return dp[n - 1]

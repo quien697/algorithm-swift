@@ -15,4 +15,10 @@ final class BestTimeToBuyAndSellStockIITest: XCTestCase {
       XCTAssertEqual(BestTimeToBuyAndSellStockII.Greedy.solve(input), expected)
     }
   }
+  
+  func testDynamicProgramming() throws {
+    BestTimeToBuyAndSellStockII.testCases.forEach { input, expected in
+      XCTAssertEqual(BestTimeToBuyAndSellStockII.DynamicProgramming.solve(input), expected)
+    }
+  }
 }
