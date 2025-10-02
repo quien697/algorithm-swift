@@ -48,7 +48,7 @@ enum BestTimeToBuyAndSellStockII: ProblemProtocol {
       return profit
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
@@ -89,7 +89,7 @@ enum BestTimeToBuyAndSellStockII: ProblemProtocol {
       return dp[n - 1]
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {

@@ -31,7 +31,7 @@ enum RomanToInteger: ProblemProtocol {
    * Space: O(1)
    *
    */
-  enum Math : ApproachProtocol {
+  enum Math: ApproachProtocol {
     static let approaches: [Approach] = [
       .Math,
       .HashTable,

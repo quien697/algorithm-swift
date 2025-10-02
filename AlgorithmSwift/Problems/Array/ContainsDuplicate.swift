@@ -51,7 +51,7 @@ enum ContainsDuplicate: ProblemProtocol {
       return false
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
@@ -94,7 +94,7 @@ enum ContainsDuplicate: ProblemProtocol {
       return false
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {

@@ -31,7 +31,7 @@ enum CountPrimes: ProblemProtocol {
    * Space: O(N)
    *
    */
-  enum Math : ApproachProtocol {
+  enum Math: ApproachProtocol {
     static let approaches: [Approach] = [
       .Math,
       .SieveOfEratosthenes

@@ -33,7 +33,7 @@ enum StringToIntegerATOI: ProblemProtocol {
    * Space: O(1)
    *
    */
-  enum StringTraversal : ApproachProtocol {
+  enum StringTraversal: ApproachProtocol {
     static let approaches: [Approach] = [
       .StringTraversal,
       .Math

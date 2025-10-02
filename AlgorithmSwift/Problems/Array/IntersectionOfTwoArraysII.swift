@@ -57,7 +57,7 @@ enum IntersectionOfTwoArraysII: ProblemProtocol {
       return result
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
@@ -103,7 +103,7 @@ enum IntersectionOfTwoArraysII: ProblemProtocol {
       return result
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {

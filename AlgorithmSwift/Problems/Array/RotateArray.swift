@@ -82,7 +82,7 @@ enum RotateArray: ProblemProtocol {
       return nums
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {

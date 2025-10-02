@@ -33,7 +33,7 @@ enum ClimbingStairs: ProblemProtocol {
    * Relation: dp[n] = dp[n-1] + dp[n-2]
    *
    */
-  enum DPBottomUp : ApproachProtocol {
+  enum DPBottomUp: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
       .BottomUp,
@@ -76,7 +76,7 @@ enum ClimbingStairs: ProblemProtocol {
    * Relation: d[n] = d[n-1] + d[n-2]
    *
    */
-  enum DPBottomUpNoSpace : ApproachProtocol {
+  enum DPBottomUpNoSpace: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
       .BottomUp,
@@ -120,7 +120,7 @@ enum ClimbingStairs: ProblemProtocol {
    * Relation: d[n] = d[n-1] + d[n-2]
    *
    */
-  enum DPTopDown : ApproachProtocol {
+  enum DPTopDown: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
       .Recursion,

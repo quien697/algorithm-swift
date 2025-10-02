@@ -30,7 +30,7 @@ enum FindTheIndexOfTheFirstOccurrenceInAString: ProblemProtocol {
    * Space: O(1)
    *
    */
-  enum BruteForceSubstringSearch : ApproachProtocol {
+  enum BruteForceSubstringSearch: ApproachProtocol {
     static let approaches: [Approach] = [
       .BruteForceSubstringSearch,
       .SlidingWindow

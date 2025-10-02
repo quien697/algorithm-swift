@@ -53,7 +53,7 @@ enum RemoveDuplicatesFromSortedArray: ProblemProtocol {
       return slow + 1
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {

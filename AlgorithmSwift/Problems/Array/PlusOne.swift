@@ -52,7 +52,7 @@ enum PlusOne: ProblemProtocol {
       return digits
     }
     
-    static func run () {
+    static func run() {
       printProblemTitle(problem: name, approaches: approaches)
       
       for (index, testCase) in testCases.enumerated() {
