@@ -112,5 +112,9 @@ import Foundation
 
 // Leetcode 70
 //ClimbingStairs.DPBottomUp.run()
-//ClimbingStairs.DPBottomUpNoSpace.run()
+//ClimbingStairs.DPSpaceOptimized.run()
 //ClimbingStairs.DPTopDown.run()
+
+// Leetcode 198
+//HouseRobber.DPBottomUp.run()
+//HouseRobber.DPSpaceOptimized.run()

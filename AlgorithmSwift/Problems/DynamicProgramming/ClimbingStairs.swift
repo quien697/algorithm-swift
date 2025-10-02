@@ -69,17 +69,16 @@ enum ClimbingStairs: ProblemProtocol {
   
   /**
    *
-   * Approach: Dynamic Programming (Bottom Up)
+   * Approach: Dynamic Programming (Space Optimized)
    * Time: O(N)
    * Space: O(1)
    *
    * Relation: d[n] = d[n-1] + d[n-2]
    *
    */
-  enum DPBottomUpNoSpace: ApproachProtocol {
+  enum DPSpaceOptimized: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
-      .BottomUp,
     ]
     
     static func solve(_ n: Int) -> Int {

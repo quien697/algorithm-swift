@@ -16,9 +16,9 @@ final class ClimbingStairsTest: XCTestCase {
     }
   }
   
-  func testDPBottomUpNoSpace() throws {
+  func testDPSpaceOptimized() throws {
     ClimbingStairs.testCases.forEach { input, expected in
-      XCTAssertEqual(ClimbingStairs.DPBottomUpNoSpace.solve(input), expected)
+      XCTAssertEqual(ClimbingStairs.DPSpaceOptimized.solve(input), expected)
     }
   }
   
