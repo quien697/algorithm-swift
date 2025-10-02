@@ -45,6 +45,7 @@
 				Problems/Array/TwoSum.swift,
 				Problems/Array/ValidSudoku.swift,
 				Problems/DynamicProgramming/ClimbingStairs.swift,
+				Problems/DynamicProgramming/MaximumSubarray.swift,
 				Problems/Math/CountPrimes.swift,
 				Problems/Math/IntegerToRoman.swift,
 				Problems/Math/PowerOfThree.swift,

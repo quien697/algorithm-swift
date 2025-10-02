@@ -39,4 +39,5 @@ enum Approach: String {
   case TwoPointers = "Two Pointers"
   case XOR = "XOR"
   case SieveOfEratosthenes = "Sieve of Eratosthenes"
+  case Kadanes = "Kadane’s Algorithm"
 }
