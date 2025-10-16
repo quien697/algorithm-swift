@@ -40,11 +40,11 @@ enum ClimbingStairs: ProblemProtocol {
     ]
     
     static func solve(_ n: Int) -> Int {
+      guard n > 2 else { return n }
+      
       var dp = [Int](repeating: 0, count: n + 1)
       dp[0] = 1
       dp[1] = 1
-      
-      if n < 2 { return dp[n] }
       
       for i in 2...n {
         dp[i] = dp[i-1] + dp[i-2]
@@ -79,10 +79,11 @@ enum ClimbingStairs: ProblemProtocol {
   enum DPSpaceOptimized: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
+      .BottomUp,
     ]
     
     static func solve(_ n: Int) -> Int {
-      guard n > 1 else { return 1 }
+      guard n > 2 else { return n }
       
       var prev1 = 1
       var prev2 = 1

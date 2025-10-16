@@ -118,3 +118,7 @@ import Foundation
 // Leetcode 198
 //HouseRobber.DPBottomUp.run()
 //HouseRobber.DPSpaceOptimized.run()
+
+// Pretty Number
+//PrettyNumber.DPBottomUp.run()
+//PrettyNumber.DPSpaceOptimized.run()

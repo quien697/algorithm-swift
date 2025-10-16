@@ -79,6 +79,7 @@ enum HouseRobber: ProblemProtocol {
   enum DPSpaceOptimized: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
+      .BottomUp,
     ]
     
     static func solve(_ nums: [Int]) -> Int {
