@@ -32,10 +32,10 @@ enum PrettyNumber: ProblemProtocol {
   /**
    *
    * Approach: Dynamic Programming (Bottom Up)
-   * Time: O(N * 10)
-   * Space: O(N * 10)
+   * Time: O(N x 10)
+   * Space: O(N x 10)
    *
-   * Relation: dp[n][d] = (d > 0 ? dp[n-1][d-1] : 0) + (d < 9 ? dp[n-1][d+1] : 0)
+   * Relation: dp[i][j] = (j > 0 ? dp[i - 1][j - 1] : 0) + (j < 9 ? dp[i - 1][j + 1] : 0)
    *
    */
   enum DPBottomUp: ApproachProtocol {
@@ -78,10 +78,10 @@ enum PrettyNumber: ProblemProtocol {
   /**
    *
    * Approach: Dynamic Programming (Space Optimized)
-   * Time: O(N * 10)
-   * Space: O(2 * 10)
+   * Time: O(N x 10)
+   * Space: O(2 x 10)
    *
-   * Relation: dp[n][d] = (d > 0 ? dp[n-1][d-1] : 0) + (d < 9 ? dp[n-1][d+1] : 0)
+   * Relation: dp[i][j] = (j > 0 ? dp[i - 1][j - 1] : 0) + (j < 9 ? dp[i - 1][j + 1] : 0)
    *
    */
   enum DPSpaceOptimized: ApproachProtocol {

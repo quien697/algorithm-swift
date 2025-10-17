@@ -32,7 +32,7 @@ enum HouseRobber: ProblemProtocol {
    * Time: O(N)
    * Space: O(N)
    *
-   * Relation: dp[n] = max(dp[n-1], nums[n] + dp[n-2])
+   * Relation: dp[n] = max(dp[n - 1], nums[n] + dp[n - 2])
    *
    *
    */
@@ -73,7 +73,7 @@ enum HouseRobber: ProblemProtocol {
    * Time: O(N)
    * Space: O(1)
    *
-   * Relation: dp[n] = max(dp[n-1], nums[n] + dp[n-2])
+   * Relation: dp[n] = max(dp[n - 1], nums[n] + dp[n - 2])
    *
    */
   enum DPSpaceOptimized: ApproachProtocol {

@@ -30,7 +30,7 @@ enum ClimbingStairs: ProblemProtocol {
    * Time: O(N)
    * Space: O(N)
    *
-   * Relation: dp[n] = dp[n-1] + dp[n-2]
+   * Relation: dp[n] = dp[n - 1] + dp[n - 2]
    *
    */
   enum DPBottomUp: ApproachProtocol {
@@ -73,7 +73,7 @@ enum ClimbingStairs: ProblemProtocol {
    * Time: O(N)
    * Space: O(1)
    *
-   * Relation: d[n] = d[n-1] + d[n-2]
+   * Relation: dp[n] = dp[n - 1] + dp[n - 2]
    *
    */
   enum DPSpaceOptimized: ApproachProtocol {

@@ -27,7 +27,7 @@ enum CoinChange: ProblemProtocol {
   /**
    *
    * Approach: Dynamic Programming (Bottom Up)
-   * Time: O(N * M)
+   * Time: O(N x M)
    * Space: O(N)
    *   - N = amount
    *   - M = number of coin

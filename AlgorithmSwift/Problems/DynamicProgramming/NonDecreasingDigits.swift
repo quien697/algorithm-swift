@@ -32,10 +32,10 @@ enum NonDecreasingDigits: ProblemProtocol {
   /**
    *
    * Approach: Dynamic Programming (Bottom Up)
-   * Time: O(N * 10)
-   * Space: O(N * 10)
+   * Time: O(N x 10)
+   * Space: O(N x 10)
    *
-   * Relation: dp[n][d] = dp[n - 1][d] + dp[n][d - 1]
+   * Relation: dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
    *
    */
   enum DPBottomUp: ApproachProtocol {
@@ -80,10 +80,10 @@ enum NonDecreasingDigits: ProblemProtocol {
   /**
    *
    * Approach: Dynamic Programming (Space Optimized)
-   * Time: O(N * 10)
-   * Space: O(2 * 10)
+   * Time: O(N x 10)
+   * Space: O(2 x 10)
    *
-   * Relation: dp[n][d] = dp[n - 1][d] + dp[n][d - 1]
+   * Relation: dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
    *
    */
   enum DPSpaceOptimized: ApproachProtocol {

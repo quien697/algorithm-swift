@@ -119,6 +119,9 @@ import Foundation
 //HouseRobber.DPBottomUp.run()
 //HouseRobber.DPSpaceOptimized.run()
 
+// Leetcode 279
+//PerfectSquares.DPBottomUp.run()
+
 // Leetcode 322
 //CoinChange.DPBottomUp.run()
 

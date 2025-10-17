@@ -30,7 +30,7 @@ enum MaximumSubarray: ProblemProtocol {
    * Time: O(N)
    * Space: O(N)
    *
-   * Relation: dp[n] = nums[n] + max(dp[n-1], 0)
+   * Relation: dp[n] = nums[n] + max(dp[n - 1], 0)
    *
    */
   enum DPBottomUp: ApproachProtocol {
@@ -71,7 +71,7 @@ enum MaximumSubarray: ProblemProtocol {
    * Time: O(N)
    * Space: O(1)
    *
-   * Relation: dp[n] = nums[n] + max(dp[n-1], 0)
+   * Relation: dp[n] = nums[n] + max(dp[n - 1], 0)
    *
    */
   enum Kadanes: ApproachProtocol {
