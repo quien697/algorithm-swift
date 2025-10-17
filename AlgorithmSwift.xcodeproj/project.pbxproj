@@ -47,6 +47,7 @@
 				Problems/DynamicProgramming/ClimbingStairs.swift,
 				Problems/DynamicProgramming/HouseRobber.swift,
 				Problems/DynamicProgramming/MaximumSubarray.swift,
+				Problems/DynamicProgramming/NonDecreasingDigits.swift,
 				Problems/DynamicProgramming/PrettyNumber.swift,
 				Problems/Math/CountPrimes.swift,
 				Problems/Math/IntegerToRoman.swift,

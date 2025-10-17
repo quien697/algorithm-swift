@@ -1,32 +1,32 @@
 //
-//  PrettyNumber.swift
+//  NonDecreasingDigits.swift
 //  AlgorithmSwift
 //
-//  Created by Quien on 2025-10-16.
+//  Created by Quien on 2025-10-17.
 //
 
 import Foundation
 
 /**
  *
- * Pretty Number
+ * Non-decreasing Digits
  *
- * A pretty number is defined as a number in which the absolute difference between every two adjacent digits is exactly 1.
- * (etc, number 45656)
+ * A number is called non-decreasing if each digit is not smaller than the one before it.
  *
- * Given an integer `n`, return the total number of pretty numbers that has exactly `n` digits.
- * A number cannot start with `0`.
+ * Given an integer `n`, return the total number of non-decreasing numbers that have exactly `n` digits.
+ * A number can start with `0`.
  *
  * Constraints: `(1 <= n <= 100)`
  *
  **/
-enum PrettyNumber: ProblemProtocol {
-  static let name: String = "Pretty Number"
+enum NonDecreasingDigits: ProblemProtocol {
+  static let name: String = "Non-decreasing Digits"
   static let domain: Domain = .DynamicProgramming
   static let testCases: [(Int, Int)] = [
-    (1, 9),
-    (2, 17),
-    (3, 32),
+    (1, 10),
+    (2, 55),
+    (3, 220),
+    (4, 715),
   ]
   
   /**
@@ -35,7 +35,7 @@ enum PrettyNumber: ProblemProtocol {
    * Time: O(N * 10)
    * Space: O(N * 10)
    *
-   * Relation: dp[n][d] = (d > 0 ? dp[n-1][d-1] : 0) + (d < 9 ? dp[n-1][d+1] : 0)
+   * Relation: dp[n][d] = dp[n - 1][d] + dp[n][d - 1]
    *
    */
   enum DPBottomUp: ApproachProtocol {
@@ -46,15 +46,17 @@ enum PrettyNumber: ProblemProtocol {
     
     static func solve(_ n: Int) -> Int {
       guard n > 0 else { return 0 }
-      if n == 1 { return 9 }
+      if n == 1 { return 10 }
       
       var dp = [[Int]](repeating: [Int](repeating: 0, count: 10), count: n + 1)
-      (1...9).forEach { dp[1][$0] = 1 }
+      dp[1] = Array(repeating: 1, count: 10)
+      
       
       for len in 2...n {
-        for d in 0..<10 {
-          if d > 0 { dp[len][d] += dp[len - 1][d - 1] }
-          if d < 9 { dp[len][d] += dp[len - 1][d + 1] }
+        dp[len][0] = 1
+        
+        for d in 1...9 {
+          dp[len][d] = dp[len - 1][d] + dp[len][d - 1]
         }
       }
       
@@ -81,7 +83,7 @@ enum PrettyNumber: ProblemProtocol {
    * Time: O(N * 10)
    * Space: O(2 * 10)
    *
-   * Relation: dp[n][d] = (d > 0 ? dp[n-1][d-1] : 0) + (d < 9 ? dp[n-1][d+1] : 0)
+   * Relation: dp[n][d] = dp[n - 1][d] + dp[n][d - 1]
    *
    */
   enum DPSpaceOptimized: ApproachProtocol {
@@ -92,17 +94,17 @@ enum PrettyNumber: ProblemProtocol {
     
     static func solve(_ n: Int) -> Int {
       guard n > 0 else { return 0 }
-      if n == 1 { return 9 }
+      if n == 1 { return 10 }
       
-      var prev = [Int](repeating: 0, count: 10)
+      var prev = [Int](repeating: 1, count: 10)
       var curr = [Int](repeating: 0, count: 10)
-      (1...9).forEach { prev[$0] = 1 }
       
       for _ in 2...n {
-        for d in 0..<10 {
-          curr[d] = (d > 0 ? prev[d - 1] : 0 ) + (d < 9 ? prev[d + 1] : 0 )
+        curr[0] = 1
+        for d in 1..<10 {
+          curr[d] = curr[d - 1] + prev[d]
         }
-
+        
         prev = curr
       }
       

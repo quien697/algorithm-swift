@@ -122,3 +122,7 @@ import Foundation
 // Pretty Number
 //PrettyNumber.DPBottomUp.run()
 //PrettyNumber.DPSpaceOptimized.run()
+
+// NonDecreasingDigits
+//NonDecreasingDigits.DPBottomUp.run()
+//NonDecreasingDigits.DPSpaceOptimized.run()
