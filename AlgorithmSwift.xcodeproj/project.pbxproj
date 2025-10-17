@@ -45,6 +45,7 @@
 				Problems/Array/TwoSum.swift,
 				Problems/Array/ValidSudoku.swift,
 				Problems/DynamicProgramming/ClimbingStairs.swift,
+				Problems/DynamicProgramming/CoinChange.swift,
 				Problems/DynamicProgramming/HouseRobber.swift,
 				Problems/DynamicProgramming/MaximumSubarray.swift,
 				Problems/DynamicProgramming/NonDecreasingDigits.swift,
