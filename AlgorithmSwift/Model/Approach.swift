@@ -27,6 +27,7 @@ enum Approach: String {
   case Prefix = "Prefix"
   case Recursion = "Recursion"
   case Reverse = "Reverse"
+  case SpaceOptimized = "Space Optimized"
   case Set = "Set"
   case SlowFast = "Slow-Fast"
   case Simulation = "Simulation"
