@@ -16,9 +16,9 @@ final class NonDecreasingDigitsTest: XCTestCase {
     }
   }
   
-  func testDPSpaceOptimized() throws {
+  func testDPBottomUpOptimized() throws {
     NonDecreasingDigits.testCases.forEach { input, expected in
-      XCTAssertEqual(NonDecreasingDigits.DPSpaceOptimized.solve(input), expected)
+      XCTAssertEqual(NonDecreasingDigits.DPBottomUpOptimized.solve(input), expected)
     }
   }
 }

@@ -69,17 +69,18 @@ enum HouseRobber: ProblemProtocol {
   
   /**
    *
-   * Approach: Dynamic Programming (Space Optimized)
+   * Approach: Dynamic Programming (Bottom Up + Space Optimized)
    * Time: O(N)
    * Space: O(1)
    *
    * Relation: dp[n] = max(dp[n - 1], nums[n] + dp[n - 2])
    *
    */
-  enum DPSpaceOptimized: ApproachProtocol {
+  enum DPBottomUpOptimized: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
       .BottomUp,
+      .SpaceOptimized,
     ]
     
     static func solve(_ nums: [Int]) -> Int {

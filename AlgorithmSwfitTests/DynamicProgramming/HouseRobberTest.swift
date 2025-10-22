@@ -16,9 +16,9 @@ final class HouseRobberTest: XCTestCase {
     }
   }
   
-  func testDPSpaceOptimized() throws {
+  func testDPBottomUpOptimized() throws {
     HouseRobber.testCases.forEach { input, expected in
-      XCTAssertEqual(HouseRobber.DPSpaceOptimized.solve(input), expected)
+      XCTAssertEqual(HouseRobber.DPBottomUpOptimized.solve(input), expected)
     }
   }
 }

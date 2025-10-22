@@ -84,7 +84,7 @@ enum DecodeWays: ProblemProtocol {
   
   /**
    *
-   * Approach: Dynamic Programming (Bottom Up)
+   * Approach: Dynamic Programming (Bottom Up + Space Optimized)
    * Time: O(N)
    * Space: O(1)
    *

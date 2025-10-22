@@ -77,17 +77,18 @@ enum PrettyNumber: ProblemProtocol {
   
   /**
    *
-   * Approach: Dynamic Programming (Space Optimized)
+   * Approach: Dynamic Programming (Bottom Up + Space Optimized)
    * Time: O(N x 10)
    * Space: O(2 x 10)
    *
    * Relation: dp[i][j] = (j > 0 ? dp[i - 1][j - 1] : 0) + (j < 9 ? dp[i - 1][j + 1] : 0)
    *
    */
-  enum DPSpaceOptimized: ApproachProtocol {
+  enum DPBottomUpOptimized: ApproachProtocol {
     static let approaches: [Approach] = [
       .DynamicProgramming,
       .BottomUp,
+      .SpaceOptimized,
     ]
     
     static func solve(_ n: Int) -> Int {

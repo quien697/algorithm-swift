@@ -16,9 +16,9 @@ final class PrettyNumberTest: XCTestCase {
     }
   }
   
-  func testDPSpaceOptimized() throws {
+  func testDPBottomUpOptimized() throws {
     PrettyNumber.testCases.forEach { input, expected in
-      XCTAssertEqual(PrettyNumber.DPSpaceOptimized.solve(input), expected)
+      XCTAssertEqual(PrettyNumber.DPBottomUpOptimized.solve(input), expected)
     }
   }
 }

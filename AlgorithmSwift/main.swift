@@ -112,7 +112,7 @@ import Foundation
 
 // Leetcode 70
 //ClimbingStairs.DPBottomUp.run()
-//ClimbingStairs.DPSpaceOptimized.run()
+//ClimbingStairs.DPBottomUpOptimized.run()
 //ClimbingStairs.DPTopDown.run()
 
 // Leetcode 91
@@ -121,7 +121,7 @@ import Foundation
 
 // Leetcode 198
 //HouseRobber.DPBottomUp.run()
-//HouseRobber.DPSpaceOptimized.run()
+//HouseRobber.DPBottomUpOptimized.run()
 
 // Leetcode 279
 //PerfectSquares.DPBottomUp.run()
@@ -131,8 +131,8 @@ import Foundation
 
 // Pretty Number
 //PrettyNumber.DPBottomUp.run()
-//PrettyNumber.DPSpaceOptimized.run()
+//PrettyNumber.DPBottomUpOptimized.run()
 
 // NonDecreasingDigits
 //NonDecreasingDigits.DPBottomUp.run()
-//NonDecreasingDigits.DPSpaceOptimized.run()
+//NonDecreasingDigits.DPBottomUpOptimized.run()
