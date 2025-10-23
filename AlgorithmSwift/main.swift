@@ -136,3 +136,7 @@ import Foundation
 // NonDecreasingDigits
 //NonDecreasingDigits.DPBottomUp.run()
 //NonDecreasingDigits.DPBottomUpOptimized.run()
+
+// Make One
+//MakeOne.DPBottomUp.run()
+//MakeOne.DPTopDown.run()
