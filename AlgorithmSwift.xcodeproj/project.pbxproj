@@ -48,6 +48,7 @@
 				Problems/DynamicProgramming/CoinChange.swift,
 				Problems/DynamicProgramming/DecodeWays.swift,
 				Problems/DynamicProgramming/HouseRobber.swift,
+				Problems/DynamicProgramming/LongestCommonSubsequence.swift,
 				Problems/DynamicProgramming/MakeOne.swift,
 				Problems/DynamicProgramming/MaximumSubarray.swift,
 				Problems/DynamicProgramming/NonDecreasingDigits.swift,
