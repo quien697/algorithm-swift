@@ -12,6 +12,7 @@ protocol ApproachProtocol {
 /// Represents the main algorithmic approach used to solve a problem.
 /// And highlights specific techniques or tricks when needed.
 enum Approach: String {
+  case BinarySearch = "Binary Search"
   case Bitwise = "Bitwise"
   case BottomUp = "Bottom Up (Tabulation)"
   case BruteForce = "Brute Force"
@@ -21,6 +22,7 @@ enum Approach: String {
   case Greedy = "Greedy"
   case HashTable = "Hash Table"
   case LeftRight = "Left-Right"
+  case LinearSearch = "Linear Search"
   case Matrix = "Matrix"
   case Math = "Math"
   case OnePass = "One-Pass"

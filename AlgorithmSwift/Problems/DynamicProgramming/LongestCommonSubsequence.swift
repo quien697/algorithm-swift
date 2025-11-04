@@ -27,8 +27,8 @@ enum LongestCommonSubsequence: ProblemProtocol {
   /**
    *
    * Approach: Dynamic Programming (Bottom Up)
-   * Time: O(N x N)
-   * Space: O(N x N)
+   * Time: O(N x M)
+   * Space: O(N x M)
    *
    * Relation: dp[i][j] =
    *  if text1[i] == text2[j]

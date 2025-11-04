@@ -49,6 +49,7 @@
 				Problems/DynamicProgramming/DecodeWays.swift,
 				Problems/DynamicProgramming/HouseRobber.swift,
 				Problems/DynamicProgramming/LongestCommonSubsequence.swift,
+				Problems/DynamicProgramming/LongestIncreasingSubsequence.swift,
 				Problems/DynamicProgramming/MakeOne.swift,
 				Problems/DynamicProgramming/MaximumSubarray.swift,
 				Problems/DynamicProgramming/NonDecreasingDigits.swift,

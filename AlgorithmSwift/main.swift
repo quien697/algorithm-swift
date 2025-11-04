@@ -126,6 +126,11 @@ import Foundation
 // Leetcode 279
 //PerfectSquares.DPBottomUp.run()
 
+// Leetcode 300
+//LongestIncreasingSubsequence.DPBottomUp.run()
+//LongestIncreasingSubsequence.DPLinearSearch.run()
+//LongestIncreasingSubsequence.DPBinarySearch.run()
+
 // Leetcode 322
 //CoinChange.DPBottomUp.run()
 
