@@ -134,6 +134,10 @@ import Foundation
 // Leetcode 322
 //CoinChange.DPBottomUp.run()
 
+// Leetcode 416
+//PartitionEqualSubsetSum.DPBottomUp.run()
+//PartitionEqualSubsetSum.DPBottomUpSet.run()
+
 // Leetcode 1143
 //LongestCommonSubsequence.DPBottomUp.run()
 

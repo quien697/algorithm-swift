@@ -53,6 +53,7 @@
 				Problems/DynamicProgramming/MakeOne.swift,
 				Problems/DynamicProgramming/MaximumSubarray.swift,
 				Problems/DynamicProgramming/NonDecreasingDigits.swift,
+				Problems/DynamicProgramming/PartitionEqualSubsetSum.swift,
 				Problems/DynamicProgramming/PerfectSquares.swift,
 				Problems/DynamicProgramming/PrettyNumber.swift,
 				Problems/Math/CountPrimes.swift,
