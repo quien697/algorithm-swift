@@ -21,4 +21,10 @@ final class PartitionEqualSubsetSumTest: XCTestCase {
       XCTAssertEqual(PartitionEqualSubsetSum.DPBottomUpSet.solve(input), expected)
     }
   }
+  
+  func testRecursion() throws {
+    PartitionEqualSubsetSum.testCases.forEach { input, expected in
+      XCTAssertEqual(PartitionEqualSubsetSum.Recursion.solve(input), expected)
+    }
+  }
 }

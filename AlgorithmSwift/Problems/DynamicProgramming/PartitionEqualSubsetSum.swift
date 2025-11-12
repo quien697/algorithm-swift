@@ -128,4 +128,47 @@ enum PartitionEqualSubsetSum: ProblemProtocol {
       }
     }
   }
+  
+  /**
+   *
+   * Approach: Recursion + Brute Force
+   * Time: O(N x M)
+   * Space: O(M)
+   *
+   */
+  enum Recursion: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .Recursion,
+      .BruteForce
+    ]
+    
+    static func solve(_ nums: [Int]) -> Bool {
+      let sum = nums.reduce(0, +)
+      guard sum % 2 == 0 else { return false }
+      
+      return dfs(0, sum / 2)
+      
+      func dfs(_ index: Int, _ remain: Int) -> Bool {
+        // base case
+        if remain == 0 { return true }
+        if index == nums.count || remain < 0 { return false }
+        
+        // recursive case
+        return dfs(index + 1, remain - nums[index]) || dfs(index + 1, remain)
+      }
+    }
+    
+    static func run() {
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let n = testCase.0
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("n = \(n)")
+        print("Result = ", solve(n))
+        print("Expected = ", expected)
+      }
+    }
+  }
 }

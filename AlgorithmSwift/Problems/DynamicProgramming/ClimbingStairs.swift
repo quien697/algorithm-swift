@@ -139,13 +139,13 @@ enum ClimbingStairs: ProblemProtocol {
     
     @discardableResult
     static func helper(_ n: Int, _ dp: inout [Int]) -> Int {
-      // Base case
+      // base case
       if n < 2 { return 1 }
       
       // If already computed, return memoized value
       if dp[n] > 0 { return dp[n] }
       
-      // Main Logic
+      // recursive case
       let steps = helper(n - 1, &dp) + helper(n - 2, &dp)
       dp[n] = steps
       

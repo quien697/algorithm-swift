@@ -137,6 +137,7 @@ import Foundation
 // Leetcode 416
 //PartitionEqualSubsetSum.DPBottomUp.run()
 //PartitionEqualSubsetSum.DPBottomUpSet.run()
+//PartitionEqualSubsetSum.Recursion.run()
 
 // Leetcode 1143
 //LongestCommonSubsequence.DPBottomUp.run()
