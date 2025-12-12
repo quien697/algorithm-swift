@@ -9,11 +9,16 @@
 ///
 /// - Time Complexity: O(N)
 /// - Space complexity: O(1)
+/// 
 /// - Parameters:
 ///   - collection: An array of `Equatable` elements
 ///   - target: The element to find
+///
 /// - Returns: The index of `target` if found,  otherwise `nil`
-func linearSearch<T: Equatable>(in collection: [T], for target: T) -> Int? {
+func linearSearch<T: Equatable>(
+  in collection: [T],
+  for target: T
+) -> Int? {
   for (index, element) in collection.enumerated() where element == target {
     return index
   }

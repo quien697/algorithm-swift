@@ -9,11 +9,16 @@
 ///
 /// - Time Complexity: O(Log N)
 /// - Space complexity: O(1)
+///
 /// - Parameters:
 ///   - collection: A sorted array of element that conform to `Comparable`
 ///   - target: The value to search for
+///
 /// - Returns: The index of `target` if found,  otherwise `nil`
-func binarySearch<T: Comparable>(in collection: [T], for target: T) -> Int? {
+func binarySearch<T: Comparable>(
+  in collection: [T],
+  for target: T
+) -> Int? {
   var lower = 0
   var upper = collection.count - 1
   
