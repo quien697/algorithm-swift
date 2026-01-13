@@ -63,6 +63,9 @@ import Foundation
 // Leetcode 14
 //LongestCommonPrefix.StringTraversal.run()
 
+// Leetcode 20
+//ValidParentheses.Stack.run()
+
 // Leetcode 28
 //FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearch.run()
 

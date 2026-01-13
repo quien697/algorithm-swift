@@ -70,6 +70,7 @@
 				Problems/String/StringToIntegerATOI.swift,
 				Problems/String/ValidAnagram.swift,
 				Problems/String/ValidPalindrome.swift,
+				Problems/String/ValidParentheses.swift,
 			);
 			target = 60BACE442E76BEE5008BAD19 /* AlgorithmSwfitTests */;
 		};
