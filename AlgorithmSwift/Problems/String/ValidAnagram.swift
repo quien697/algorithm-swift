@@ -66,4 +66,35 @@ enum ValidAnagram: ProblemProtocol {
       }
     }
   }
+  
+  /**
+   *
+   * Approach: Sorting
+   * Time: O(N LogN)
+   * Space: O(1)
+   *
+   */
+  enum Sorting: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .Sorting,
+    ]
+    
+    static func solve(_ s: String, _ t: String) -> Bool {
+      return s.sorted() == t.sorted()
+    }
+    
+    static func run() {
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let s = testCase.0.0
+        let t = testCase.0.1
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("s = \(s), t = \(t)")
+        print("Result = ", solve(s, t))
+        print("Expected = ", expected)
+      }
+    }
+  }
 }

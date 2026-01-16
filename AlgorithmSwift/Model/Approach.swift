@@ -19,6 +19,7 @@ enum Approach: String {
   case BruteForceSubstringSearch = "Brute Force Substring Search"
   case DynamicProgramming = "Dynamic Programming"
   case Dictionary = "Dictionary"
+  case ExpandAroundCenter = "Expand Around Center"
   case Greedy = "Greedy"
   case HashTable = "Hash Table"
   case LeftRight = "Left-Right"

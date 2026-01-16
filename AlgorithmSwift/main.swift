@@ -75,6 +75,7 @@ import Foundation
 
 // Leetcode 242
 //ValidAnagram.HashTable.run()
+//ValidAnagram.Sorting.run()
 
 // Leetcode 344
 //ReverseString.TwoPointers.run()
@@ -108,6 +109,10 @@ import Foundation
 
 
 // MARK: - Dynamic Programming
+
+// Leetcode 5
+//LongestPalindromicSubstring.DPBottomUp.run()
+//LongestPalindromicSubstring.ExpandAroundCenter.run()
 
 // Leetcode 53
 //MaximumSubarray.DPBottomUp.run()
