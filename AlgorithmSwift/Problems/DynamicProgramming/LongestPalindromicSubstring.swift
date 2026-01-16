@@ -18,11 +18,11 @@ import Foundation
 enum LongestPalindromicSubstring: ProblemProtocol {
   static let name: String = "Longest Palindromic Substring"
   static let domain: Domain = .DynamicProgramming
-  static let testCases: [(String, String)] = [
-    ("babad", "bab"),
-    ("cbbd", "bb"),
-    ("ccc", "ccc"),
-    ("ac", "ac")
+  static let testCases: [(String, Set<String>)] = [
+    ("babad", ["bab", "aba"]),
+    ("cbbd", ["bb"]),
+    ("ccc", ["ccc"]),
+    ("ac", ["a", "c"])
   ]
   
   /**
@@ -75,7 +75,7 @@ enum LongestPalindromicSubstring: ProblemProtocol {
         print("\nCase \(index + 1):")
         print("s = \(s)")
         print("Result = ", solve(s))
-        print("Expected = ", expected)
+        print("Expected = ", expected.joined(separator: " | "))
       }
     }
   }
@@ -136,7 +136,7 @@ enum LongestPalindromicSubstring: ProblemProtocol {
         print("\nCase \(index + 1):")
         print("s = \(s)")
         print("Result = ", solve(s))
-        print("Expected = ", expected)
+        print("Expected = ", expected.joined(separator: " | "))
       }
     }
   }
