@@ -10,11 +10,19 @@ import XCTest
 
 final class FindTheIndexOfTheFirstOccurrenceInAStringTest: XCTestCase {
   
-  func testBruteForceSubstringSearch() throws {
+  func testBruteForceSubstringSearchStringIndex() throws {
     FindTheIndexOfTheFirstOccurrenceInAString.testCases.forEach { input, expected in
       let haystack = input.0
       let needle = input.1
-      XCTAssertEqual(FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearch.solve(haystack, needle), expected)
+      XCTAssertEqual(FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearchStringIndex.solve(haystack, needle), expected)
+    }
+  }
+  
+  func testBruteForceSubstringSearchArrayIndex() throws {
+    FindTheIndexOfTheFirstOccurrenceInAString.testCases.forEach { input, expected in
+      let haystack = input.0
+      let needle = input.1
+      XCTAssertEqual(FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearchArrayIndex.solve(haystack, needle), expected)
     }
   }
 }

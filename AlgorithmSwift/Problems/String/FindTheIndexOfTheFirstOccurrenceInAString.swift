@@ -21,6 +21,7 @@ enum FindTheIndexOfTheFirstOccurrenceInAString: ProblemProtocol {
   static let testCases: [((String, String), Int)] = [
     (("sadbutsad", "sad"), 0),
     (("leetcode", "leeto"), -1),
+    (("It's aa pencil", "a pen"), 6),
   ]
   
   /**
@@ -30,7 +31,7 @@ enum FindTheIndexOfTheFirstOccurrenceInAString: ProblemProtocol {
    * Space: O(1)
    *
    */
-  enum BruteForceSubstringSearch: ApproachProtocol {
+  enum BruteForceSubstringSearchStringIndex: ApproachProtocol {
     static let approaches: [Approach] = [
       .BruteForceSubstringSearch,
       .SlidingWindow
@@ -55,6 +56,56 @@ enum FindTheIndexOfTheFirstOccurrenceInAString: ProblemProtocol {
         index = haystack.index(after: index)
       }
       
+      return -1
+    }
+    
+    static func run() {
+      printProblemTitle(problem: name, approaches: approaches)
+      
+      for (index, testCase) in testCases.enumerated() {
+        let haystack = testCase.0.0
+        let needle = testCase.0.1
+        let expected = testCase.1
+        print("\nCase \(index + 1):")
+        print("haystack = \(haystack), needle = \(needle)")
+        print("Result = ", solve(haystack, needle))
+        print("Expected = ", expected)
+      }
+    }
+  }
+  
+  /**
+   *
+   * Approach: Brute Force Substring Search (Sliding Window)
+   * Time: O(N x M)
+   * Space: O(1)
+   *
+   */
+  enum BruteForceSubstringSearchArrayIndex: ApproachProtocol {
+    static let approaches: [Approach] = [
+      .BruteForceSubstringSearch,
+      .SlidingWindow
+    ]
+    
+    static func solve(_ haystack: String, _ needle: String) -> Int {
+      let haystack = Array(haystack)
+      let needle = Array(needle)
+      let n = haystack.count
+      let m = needle.count
+      
+      guard n >= m else { return -1 }
+      
+      for i in 0...(n - m) {
+        var j = 0
+        
+        while j < m && haystack[i + j] == needle[j] {
+          j += 1
+        }
+        
+        if j == m {
+          return i
+        }
+      }
       return -1
     }
     

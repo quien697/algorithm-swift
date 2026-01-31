@@ -67,7 +67,8 @@ import Foundation
 //ValidParentheses.Stack.run()
 
 // Leetcode 28
-//FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearch.run()
+//FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearchStringIndex.run()
+//FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearchArrayIndex.run()
 
 // Leetcode 125
 //ValidPalindrome.TwoPointers.run()
