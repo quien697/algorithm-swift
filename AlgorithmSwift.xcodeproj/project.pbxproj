@@ -67,6 +67,7 @@
 				Problems/String/FirstUniqueCharacterInAString.swift,
 				Problems/String/FizzBuzz.swift,
 				Problems/String/LongestCommonPrefix.swift,
+				Problems/String/LongestSubstringWithoutRepeatingCharacters.swift,
 				Problems/String/ReverseInteger.swift,
 				Problems/String/ReverseString.swift,
 				Problems/String/StringToIntegerATOI.swift,
