@@ -75,16 +75,15 @@ enum IntegerToRoman: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let num = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("num = \(num)")
-        print("Result = ", solve(num))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "num = \(input)"
+        }
+      )
     }
   }
 }

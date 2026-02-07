@@ -109,7 +109,7 @@ enum ValidSudoku: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Board = \(input)"
+          "board = \(input)"
         }
       )
     }

@@ -58,7 +58,7 @@ enum ContainsDuplicate: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Nums = \(input)"
+          "nums = \(input)"
         }
       )
     }
@@ -100,7 +100,7 @@ enum ContainsDuplicate: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Nums = \(input)"
+          "nums = \(input)"
         }
       )
     }

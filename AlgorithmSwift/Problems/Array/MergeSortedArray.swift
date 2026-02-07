@@ -69,7 +69,7 @@ enum MergeSortedArray: ProblemProtocol {
           return solve(&nums1, m, nums2, n)
         },
         inputDescription: { input in
-          "Nums1 = \(input.0), m = \(input.1);\nNums2 = \(input.2), n = \(input.3)"
+          "nums1 = \(input.0), m = \(input.1);\nnums2 = \(input.2), n = \(input.3)"
         }
       )
     }

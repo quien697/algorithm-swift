@@ -59,7 +59,7 @@ enum PlusOne: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Digits = \(input)"
+          "digits = \(input)"
         }
       )
     }

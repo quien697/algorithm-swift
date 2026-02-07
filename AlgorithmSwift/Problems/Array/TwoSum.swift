@@ -58,7 +58,7 @@ enum TwoSum: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Nums = \(input.0), Target = \(input.1)"
+          "nums = \(input.0), target = \(input.1)"
         }
       )
     }
@@ -97,7 +97,7 @@ enum TwoSum: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Nums = \(input.0), Target = \(input.1)"
+          "nums = \(input.0), target = \(input.1)"
         }
       )
     }

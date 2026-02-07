@@ -56,7 +56,7 @@ enum RotateArray: ProblemProtocol {
           return solve(&nums, k)
         },
         inputDescription: { input in
-          "Nums = \(input.0), k = \(input.1)"
+          "nums = \(input.0), k = \(input.1)"
         }
       )
     }
@@ -96,7 +96,7 @@ enum RotateArray: ProblemProtocol {
           return solve(&nums, k)
         },
         inputDescription: { input in
-          "Nums = \(input.0), k = \(input.1)"
+          "nums = \(input.0), k = \(input.1)"
         }
       )
     }

@@ -55,7 +55,7 @@ enum BestTimeToBuyAndSellStockII: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Prices = \(input)"
+          "prices = \(input)"
         }
       )
     }
@@ -95,7 +95,7 @@ enum BestTimeToBuyAndSellStockII: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Prices = \(input)"
+          "prices = \(input)"
         }
       )
     }

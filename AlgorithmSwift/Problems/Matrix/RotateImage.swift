@@ -58,16 +58,18 @@ enum RotateImage: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        var matrix = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Matrix = \(matrix)")
-        print("Result = ", solve(&matrix))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: { (input: [[Int]]) -> [[Int]] in
+          var matrix = input
+          return solve(&matrix)
+        },
+        inputDescription: { input in
+          "matrix = \(input)"
+        }
+      )
     }
   }
 }

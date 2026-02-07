@@ -64,7 +64,7 @@ enum IntersectionOfTwoArraysII: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Nums1 = \(input.0), Nums2 = \(input.1)"
+          "nums1 = \(input.0), nums2 = \(input.1)"
         }
       )
       
@@ -109,7 +109,7 @@ enum IntersectionOfTwoArraysII: ProblemProtocol {
         approaches: approaches,
         run: solve,
         inputDescription: { input in
-          "Nums1 = \(input.0), Nums2 = \(input.1)"
+          "nums1 = \(input.0), nums2 = \(input.1)"
         }
       )
     }

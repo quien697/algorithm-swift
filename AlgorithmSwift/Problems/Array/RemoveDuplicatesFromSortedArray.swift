@@ -63,7 +63,7 @@ enum RemoveDuplicatesFromSortedArray: ProblemProtocol {
           return solve(&nums)
         },
         inputDescription: { input in
-          "Nums = \(input)"
+          "nums = \(input)"
         }
       )
     }

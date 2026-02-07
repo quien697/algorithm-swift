@@ -59,7 +59,7 @@ enum MoveZeroes: ProblemProtocol {
           return solve(&nums)
         },
         inputDescription: { input in
-          "Nums = \(input)"
+          "nums = \(input)"
         }
       )
     }
