@@ -155,6 +155,10 @@ import Foundation
 //LongestPalindromicSubsequence.DPBottomUpLCS.run()
 //LongestPalindromicSubsequence.DPBottomUp.run()
 
+// Leetcode 647
+//PalindromicSubstrings.DPBottomUp.run()
+//PalindromicSubstrings.ExpandAroundCenter.run()
+
 // Leetcode 1143
 //LongestCommonSubsequence.DPBottomUp.run()
 
