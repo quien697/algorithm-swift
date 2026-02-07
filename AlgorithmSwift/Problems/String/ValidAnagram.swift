@@ -53,17 +53,15 @@ enum ValidAnagram: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let s = testCase.0.0
-        let t = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("s = \(s), t = \(t)")
-        print("Result = ", solve(s, t))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "s = \(input.0), t = \(input.1)"
+        }
+      )
     }
   }
   
@@ -84,17 +82,15 @@ enum ValidAnagram: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let s = testCase.0.0
-        let t = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("s = \(s), t = \(t)")
-        print("Result = ", solve(s, t))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "s = \(input.0), t = \(input.1)"
+        }
+      )
     }
   }
-}
+ }

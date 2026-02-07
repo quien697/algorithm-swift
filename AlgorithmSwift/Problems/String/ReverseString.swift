@@ -53,16 +53,18 @@ enum ReverseString: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        var s = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("s = \(s)")
-        print("Result = ", solve(&s))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: { (input: [Character]) -> [Character] in
+          var s = input
+          return solve(&s)
+        },
+        inputDescription: { input in
+          "s = \(input)"
+        }
+      )
     }
   }
 }

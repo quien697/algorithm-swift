@@ -60,17 +60,15 @@ enum FindTheIndexOfTheFirstOccurrenceInAString: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let haystack = testCase.0.0
-        let needle = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("haystack = \(haystack), needle = \(needle)")
-        print("Result = ", solve(haystack, needle))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "haystack = \(input.0), needle = \(input.1)"
+        }
+      )
     }
   }
   
@@ -110,17 +108,15 @@ enum FindTheIndexOfTheFirstOccurrenceInAString: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let haystack = testCase.0.0
-        let needle = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("haystack = \(haystack), needle = \(needle)")
-        print("Result = ", solve(haystack, needle))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "haystack = \(input.0), needle = \(input.1)"
+        }
+      )
     }
   }
 }
