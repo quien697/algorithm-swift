@@ -54,16 +54,15 @@ enum HouseRobber: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let nums = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("nums = \(nums)")
-        print("Result = ", solve(nums))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "nums = \(input)"
+        }
+      )
     }
   }
   
@@ -97,16 +96,15 @@ enum HouseRobber: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let nums = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("nums = \(nums)")
-        print("Result = ", solve(nums))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "nums = \(input)"
+        }
+      )
     }
   }
 }

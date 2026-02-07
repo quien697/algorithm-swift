@@ -66,17 +66,15 @@ enum LongestCommonSubsequence: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let text1 = testCase.0.0
-        let text2 = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("text1 = \(text1), text2 = \(text2)")
-        print("Result = ", solve(text1, text2))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "text1 = \(input.0), text2 = \(input.1)"
+        }
+      )
     }
   }
 }

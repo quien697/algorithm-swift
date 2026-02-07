@@ -57,17 +57,15 @@ enum CoinChange: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let coins = testCase.0.0
-        let amount = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("coins = \(coins), amount = \(amount)")
-        print("Result = ", solve(coins, amount))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "coins = \(input.0), amount = \(input.1)"
+        }
+      )
     }
   }
 }

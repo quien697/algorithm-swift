@@ -69,16 +69,15 @@ enum DecodeWays: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let s = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("s = \(s)")
-        print("Result = ", solve(s))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "s = \(input)"
+        }
+      )
     }
   }
   
@@ -130,16 +129,15 @@ enum DecodeWays: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let s = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("s = \(s)")
-        print("Result = ", solve(s))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "s = \(input)"
+        }
+      )
     }
   }
 }

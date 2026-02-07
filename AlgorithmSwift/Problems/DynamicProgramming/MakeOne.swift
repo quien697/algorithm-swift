@@ -86,16 +86,15 @@ enum MakeOne: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let n = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("n = \(n)")
-        print("Result = ", solve(n))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "n = \(input)"
+        }
+      )
     }
   }
   
@@ -138,23 +137,22 @@ enum MakeOne: ProblemProtocol {
       
       // Main logic
       dp[n] = helper(n - 1, &dp) + 1
-      if n % 2 == 0 { dp[n] = min(helper(n, &dp), helper(n / 2, &dp) + 1) }
-      if n % 3 == 0 { dp[n] = min(helper(n, &dp), helper(n / 3, &dp) + 1) }
+      if n % 2 == 0 { dp[n] = min(dp[n], helper(n / 2, &dp) + 1) }
+      if n % 3 == 0 { dp[n] = min(dp[n], helper(n / 3, &dp) + 1) }
       
       return dp[n]
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let n = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("n = \(n)")
-        print("Result = ", solve(n))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "n = \(input)"
+        }
+      )
     }
   }
 }

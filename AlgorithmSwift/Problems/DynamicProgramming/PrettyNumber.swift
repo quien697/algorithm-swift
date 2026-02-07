@@ -62,16 +62,15 @@ enum PrettyNumber: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let n = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("n = \(n)")
-        print("Result = ", solve(n))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "n = \(input)"
+        }
+      )
     }
   }
   
@@ -103,7 +102,7 @@ enum PrettyNumber: ProblemProtocol {
         for d in 0..<10 {
           curr[d] = (d > 0 ? prev[d - 1] : 0 ) + (d < 9 ? prev[d + 1] : 0 )
         }
-
+        
         prev = curr
       }
       
@@ -111,16 +110,15 @@ enum PrettyNumber: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let n = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("n = \(n)")
-        print("Result = ", solve(n))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "n = \(input)"
+        }
+      )
     }
   }
 }
