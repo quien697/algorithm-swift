@@ -46,16 +46,19 @@ enum RotateArray: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        var nums = testCase.0.0
-        let k = testCase.0.1
-        print("\nCase \(index + 1):")
-        print("Nums = \(nums)")
-        print("Result = ", solve(&nums, k))
-        print("expected = ", testCase.1)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: { (input: ([Int], Int)) -> [Int] in
+          var nums = input.0
+          let k = input.1
+          return solve(&nums, k)
+        },
+        inputDescription: { input in
+          "Nums = \(input.0), k = \(input.1)"
+        }
+      )
     }
   }
   
@@ -83,17 +86,19 @@ enum RotateArray: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        var nums = testCase.0.0
-        let k = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums = \(nums), k = \(k)")
-        print("Result = ", solve(&nums, k))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: { (input: ([Int], Int)) -> [Int] in
+          var nums = input.0
+          let k = input.1
+          return solve(&nums, k)
+        },
+        inputDescription: { input in
+          "Nums = \(input.0), k = \(input.1)"
+        }
+      )
     }
   }
 }

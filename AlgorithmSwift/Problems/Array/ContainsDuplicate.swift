@@ -52,16 +52,15 @@ enum ContainsDuplicate: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let nums = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums = \(nums)")
-        print("Result = ", solve(nums))
-        print("expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Nums = \(input)"
+        }
+      )
     }
   }
   
@@ -95,16 +94,15 @@ enum ContainsDuplicate: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let nums = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums = \(nums)")
-        print("Result = ", solve(nums))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Nums = \(input)"
+        }
+      )
     }
   }
 }

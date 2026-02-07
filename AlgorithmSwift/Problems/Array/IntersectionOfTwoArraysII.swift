@@ -58,17 +58,16 @@ enum IntersectionOfTwoArraysII: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Nums1 = \(input.0), Nums2 = \(input.1)"
+        }
+      )
       
-      for (index, testCase) in testCases.enumerated() {
-        let nums1 = testCase.0.0
-        let nums2 = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums1 = \(nums1), Nums2 = \(nums2)")
-        print("Result = ", solve(nums1, nums2))
-        print("Expected = ", expected)
-      }
     }
   }
   
@@ -104,17 +103,15 @@ enum IntersectionOfTwoArraysII: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let nums1 = testCase.0.0
-        let nums2 = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums1 = \(nums1), Nums2 = \(nums2)")
-        print("Result = ", solve(nums1, nums2))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Nums1 = \(input.0), Nums2 = \(input.1)"
+        }
+      )
     }
   }
 }

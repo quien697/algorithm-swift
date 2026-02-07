@@ -53,16 +53,15 @@ enum PlusOne: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let digits = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Digits = \(digits)")
-        print("Result = ", solve(digits))
-        print("expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Digits = \(input)"
+        }
+      )
     }
   }
 }

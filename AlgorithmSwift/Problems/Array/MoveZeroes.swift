@@ -50,16 +50,18 @@ enum MoveZeroes: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        var nums = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums = \(nums)")
-        print("Result = ", solve(&nums))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: { (input: [Int]) -> [Int] in
+          var nums = input
+          return solve(&nums)
+        },
+        inputDescription: { input in
+          "Nums = \(input)"
+        }
+      )
     }
   }
 }

@@ -29,7 +29,7 @@
 			membershipExceptions = (
 				Algorithm/Search/BinarySearch.swift,
 				Algorithm/Search/LinearSearch.swift,
-				Helper/Helper.swift,
+				Helper/PrintTestsResult.swift,
 				Model/Approach.swift,
 				Model/Domain.swift,
 				Problems/Array/BestTimeToBuyAndSellStock.swift,

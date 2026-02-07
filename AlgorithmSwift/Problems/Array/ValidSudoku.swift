@@ -103,16 +103,15 @@ enum ValidSudoku: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let board = testCase.0
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Board = \(board)")
-        print("Result = ", solve(board))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Board = \(input)"
+        }
+      )
     }
   }
 }

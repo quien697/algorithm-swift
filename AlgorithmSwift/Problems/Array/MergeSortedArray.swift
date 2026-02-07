@@ -57,20 +57,21 @@ enum MergeSortedArray: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        var nums1 = testCase.0.0
-        let m = testCase.0.1
-        let nums2 = testCase.0.2
-        let n = testCase.0.3
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums1 = \(nums1), m = \(m)")
-        print("Nums2 = \(nums2), n = \(n)")
-        print("Result = ", solve(&nums1, m, nums2, n))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: { (input: ([Int], Int, [Int], Int)) -> [Int] in
+          var nums1 = input.0
+          let m = input.1
+          let nums2 = input.2
+          let n = input.3
+          return solve(&nums1, m, nums2, n)
+        },
+        inputDescription: { input in
+          "Nums1 = \(input.0), m = \(input.1);\nNums2 = \(input.2), n = \(input.3)"
+        }
+      )
     }
   }
 }

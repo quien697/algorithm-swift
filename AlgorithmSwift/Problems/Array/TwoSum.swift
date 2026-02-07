@@ -52,17 +52,15 @@ enum TwoSum: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let nums = testCase.0.0
-        let target = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums = \(nums), Target = \(target)")
-        print("Result = ", solve(nums, target))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Nums = \(input.0), Target = \(input.1)"
+        }
+      )
     }
   }
   
@@ -93,17 +91,15 @@ enum TwoSum: ProblemProtocol {
     }
     
     static func run() {
-      printProblemTitle(problem: name, approaches: approaches)
-      
-      for (index, testCase) in testCases.enumerated() {
-        let nums = testCase.0.0
-        let target = testCase.0.1
-        let expected = testCase.1
-        print("\nCase \(index + 1):")
-        print("Nums = \(nums), Target = \(target)")
-        print("Result = ", solve(nums, target))
-        print("Expected = ", expected)
-      }
+      printTestsResult(
+        testCases,
+        problem: name,
+        approaches: approaches,
+        run: solve,
+        inputDescription: { input in
+          "Nums = \(input.0), Target = \(input.1)"
+        }
+      )
     }
   }
 }
