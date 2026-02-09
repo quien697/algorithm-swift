@@ -35,9 +35,11 @@ enum GroupAnagrams: ProblemProtocol {
   
   /**
    *
-   * Approach: String (Prefix)
-   * Time: O(N x M)
-   * Space: O(1)
+   * Approach: Hash Table + Sorting
+   * Time: O(N x K Log K)
+   * Space: O(N x K)
+   *  - N = number of strings (like, str.scount)
+   *  - K = average length of each string (like, str[0].count)
    *
    */
   enum HashTable: ApproachProtocol {
