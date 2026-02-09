@@ -73,6 +73,9 @@ import Foundation
 //FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearchStringIndex.run()
 //FindTheIndexOfTheFirstOccurrenceInAString.BruteForceSubstringSearchArrayIndex.run()
 
+// Leetcode 49
+//GroupAnagrams.HashTable.run()
+
 // Leetcode 125
 //ValidPalindrome.TwoPointers.run()
 //ValidPalindrome.Reverse.run()
