@@ -69,6 +69,7 @@
 				Problems/String/FizzBuzz.swift,
 				Problems/String/GroupAnagrams.swift,
 				Problems/String/LongestCommonPrefix.swift,
+				Problems/String/LongestRepeatingCharacterReplacement.swift,
 				Problems/String/LongestSubstringWithoutRepeatingCharacters.swift,
 				Problems/String/ReverseInteger.swift,
 				Problems/String/ReverseString.swift,

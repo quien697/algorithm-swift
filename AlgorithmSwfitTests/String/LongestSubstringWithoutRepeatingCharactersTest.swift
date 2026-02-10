@@ -10,7 +10,7 @@ import XCTest
 
 final class LongestSubstringWithoutRepeatingCharactersTest: XCTestCase {
   
-  func testStringTraversal() throws {
+  func testSlidingWindow() throws {
     LongestSubstringWithoutRepeatingCharacters.testCases.forEach { input, expected in
       XCTAssertEqual(LongestSubstringWithoutRepeatingCharacters.SlidingWindow.solve(input), expected)
     }
