@@ -10,7 +10,7 @@ import XCTest
 
 final class IntersectionOfTwoArraysIITest: XCTestCase {
   
-  func textSortingTwoPointers() throws {
+  func testSortingTwoPointers() throws {
     IntersectionOfTwoArraysII.testCases.forEach { input, expected in
       let nums1 = input.0, nums2 = input.1
       XCTAssertEqual(IntersectionOfTwoArraysII.SortingTwoPointers.solve(nums1, nums2).sorted(), expected)

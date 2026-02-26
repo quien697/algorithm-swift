@@ -37,6 +37,7 @@ enum Approach: String {
   case SlidingWindow = "Sliding Window"
   case Sorting = "Sorting"
   case Stack = "stack"
+  case StreakCounting = "Streak Counting"
   case StringTraversal = "String Traversal"
   case Swap = "Swap"
   case TopDown = "Top Down (Memorization)"
