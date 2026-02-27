@@ -10,9 +10,9 @@ import XCTest
 
 final class MaxConsecutiveOnesTest: XCTestCase {
   
-  func testStreakCounting() throws {
+  func testLinearScan() throws {
     MaxConsecutiveOnes.testCases.forEach { input, expected in
-      XCTAssertEqual(MaxConsecutiveOnes.StreakCounting.solve(input), expected)
+      XCTAssertEqual(MaxConsecutiveOnes.LinearScan.solve(input), expected)
     }
   }
 }

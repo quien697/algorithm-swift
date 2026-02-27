@@ -25,14 +25,14 @@ enum MaxConsecutiveOnes: ProblemProtocol {
   
   /**
    *
-   * Approach: StreakCounting
+   * Approach: LinearScan
    * Time: O(N)
    * Space: O(1)
    *
    */
-  enum StreakCounting: ApproachProtocol {
+  enum LinearScan: ApproachProtocol {
     static let approaches: [Approach] = [
-      .StreakCounting,
+      .LinearScan,
       .OnePass,
       .Greedy
     ]
