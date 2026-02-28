@@ -54,6 +54,9 @@ import Foundation
 // Leetcode 485
 //MaxConsecutiveOnes.StreakCounting.run()
 
+// Leetcode 977
+//SquaresOfASortedArray.TwoPointers.run()
+
 // Leetcode 1295
 //FindNumbersWithEvenNumberOfDigits.LinearScan.run()
 
