@@ -42,6 +42,7 @@
 				Problems/Array/MoveZeroes.swift,
 				Problems/Array/PlusOne.swift,
 				Problems/Array/RemoveDuplicatesFromSortedArray.swift,
+				Problems/Array/RemoveElement.swift,
 				Problems/Array/RotateArray.swift,
 				Problems/Array/SingleNumber.swift,
 				Problems/Array/SquaresOfASortedArray.swift,
